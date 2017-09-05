@@ -1,33 +1,36 @@
-.tab1{
-  background-color: #eee;
-  padding: 60px 20px;
-  text-align: center;
-  img{
-    width: 50%;
-    height: 50%;
-  }
-}
-.tab2{
-  padding: 40px 0;
-  text-align: center;
-  img{
-    width: 50%;
-    height: 50%;
-  }
-}
-.text {
-  //text-align: left;
-  h3{
-    font-size: 24px;
-  }
-  p{
-    font-size: 14px;
-    color: #777;
-  }
-}
 .product{
-  margin-top: 20px;
 
+  @product-p:#777;
+  @product-tab1:#eee;
+
+  margin-top: 1rem;
+  .tab-common{
+    padding: 3rem 0;
+    text-align: center;
+    height: 27rem;
+    .container{
+      //margin-top: 2rem;
+      img{
+        height: 20rem;
+      }
+      .text {
+        h3{
+          font-size: 2.3rem;
+        }
+        p{
+          font-size: 1.2rem;
+          color: @product-p;
+        }
+      }
+      .mt-3{
+        margin-top: -3rem;
+      }
+    }
+
+  }
+  .tab1{
+    background-color: @product-tab1;
+  }
 }
 
 
