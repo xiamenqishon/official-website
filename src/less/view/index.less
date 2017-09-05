@@ -66,6 +66,10 @@ body{
       }
     }
     .pain{
+      border: 1px solid #f5f5f5;
+      .panel-group{
+        margin-bottom: 0;
+      }
       .table-question{
         color: #ffffff;
         font-size: @font16;
@@ -107,15 +111,12 @@ body{
           display: block;
           padding: 2.5rem 1.5rem 0;
         }
-        /*&:hover{
-          border-left:5px solid #00a0e9;
-          border-right:none;
-          background-color: #ffffff;
-        }*/
-        &.active{
-          border-left:5px solid #00a0e9;
-          border-right:none;
-          background-color: #ffffff;
+        @media (min-width: 768px) {
+          &.active{
+            border-left:5px solid #00a0e9;
+            border-right:none;
+            background-color: #ffffff;
+          }
         }
       }
       .resolve-content{
@@ -132,6 +133,9 @@ body{
       }
       .table-sm-resolve{
         //display: none;
+        img{
+          width: 100%;
+        }
         p{
           padding: 1rem 2rem;
         }
@@ -141,16 +145,73 @@ body{
         border-radius: 0;
         border:none;
       }
+      .ques-bottom{
+        height: 8.33rem;
+        border:1px solid #f5f5f5;
+        background-color: #fafafa;
+      }
+      .more-ques{
+        height:4rem;
+        line-height: 4rem;
+        text-align: center;
+        background-color: #fafafa;
+        a{
+          color: #00a0e9;
+          text-decoration: none;
+        }
+      }
     }
   }
 
   .resolve{
     width: 100%;
+    margin-top: 8rem;
     background-color: #fafafa;
     .resolve-title{
       text-align: center;
       font-size: 2.8rem;
       padding: 2.5rem 0 1.5rem;
+    }
+    .logo{
+      display: inline-block;
+      margin: 3.5rem 0;
+      width: 100%;
+      text-align: center;
+      li{
+        width: 9%;
+        display: inline-block;
+        text-align: center;
+        a{
+          display: block;
+          @media (min-width: 1024px) {
+            img{
+              width: 5rem;
+            }
+          }
+          @media (min-width: 768px) and (max-width: 1024px) {
+            img{
+              width: 4rem;
+            }
+          }
+          @media (min-width: 320px) and (max-width: 767px) {
+            img{
+              width: 2rem;
+            }
+          }
+        }
+      }
+    }
+    .more{
+      text-align: center;
+      padding-bottom: 3.5rem;
+      a{
+        color: #00a0e9;
+        border:1px solid #00a0e9;
+        background-color: #ffffff;
+        &:hover{
+          background-color: #fafafa;
+        }
+      }
     }
   }
 }

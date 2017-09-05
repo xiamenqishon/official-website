@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="../css/plugins/bootstrap.min.css">
     <link rel="stylesheet" href="../css/plugins/swiper-3.4.2.min.css">
     <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_399091_1s750bz73w61or.css">
     <!--[if lt IE 9]>
     <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
     <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="../scripts/plugins/rem.js"></script>
 </head>
 <body>
 <!--顶部导航栏菜单-->
@@ -25,7 +27,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="../images/logo.png" alt="logo"></a>
+            <a class="navbar-brand" href="./index.html"><img src="../images/logo.png" alt="logo"></a>
         </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
@@ -33,7 +35,7 @@
                     <li><a href="./product.html">产品</a></li>
                     <li><a href="./customization.html">SaaS定制平台</a></li>
                     <li><a href="#">SaaS面料平台</a></li>
-                    <li><a href="#">客户案例</a></li>
+                    <li><a href="./case.html">客户案例</a></li>
                     <li><a href="./consulting.html">活动资讯</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -108,19 +110,19 @@
                     <img src="../images/product/iPad.png" alt="">
                 </div>
                 <div class="col-lg-3 col-sm-6 col-xs-6 system">
-                    <p class="projectName">时尚定制系统</p>
-                    <p class="projectDesc">360°实展示3D服装定制效果</p>
-                    <img src="../images/product/iPad.png" alt="">
+                    <p class="projectName">3D面料展示系统</p>
+                    <p class="projectDesc">真实模拟面料成衣效果</p>
+                    <img src="../images/product/iPad2.png" alt="">
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-6 system" style="background: url('../images/product/scanner.png') no-repeat;">
+                    <p class="projectName">3D高清面料扫描仪</p>
+                    <p class="projectDesc">真实还原颜色和纹理</p>
+                    <!--<img src="../images/product/scanner.png" alt="">-->
                 </div>
                 <div class="col-lg-3 col-sm-6 col-xs-6 system">
-                    <p class="projectName">时尚定制系统</p>
-                    <p class="projectDesc">360°实展示3D服装定制效果</p>
-                    <img src="../images/product/iPad.png" alt="">
-                </div>
-                <div class="col-lg-3 col-sm-6 col-xs-6 system">
-                    <p class="projectName">时尚定制系统</p>
-                    <p class="projectDesc">360°实展示3D服装定制效果</p>
-                    <img src="../images/product/iPad.png" alt="">
+                    <p class="projectName">智能搭配系统</p>
+                    <p class="projectDesc">提供优质的消费者服务</p>
+                    <img src="../images/product/mac.png" alt="">
                 </div>
             </div>
         </div>
@@ -143,37 +145,9 @@
                         <div class="swiper-slide">
                             <div class="col-lg-4 col-md-4 col-sm-4">
                                 <div class="row table-question">企业问题</div>
-                                <!--<div class="row question-content active"><span>[效果不直观]</span> 客户只能靠自己想象成衣是什么样子的。</div>
-                                <div class="row table-sm-resolve">
-                                    <div class="hidden-lg hidden-md hidden-sm">
-                                        <p>3D成衣展示，效果清晰逼真，支持旋转，缩放查看纹理、细节效果1。</p>
-                                        <img src="../images/product/resolve.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="row question-content"><span>[效果不直观]</span> 客户只能靠自己想象成衣是什么样子的。</div>
-                                <div class="row table-sm-resolve">
-                                    <div class="hidden-lg hidden-md hidden-sm">
-                                        <p>3D成衣展示，效果清晰逼真，支持旋转，缩放查看纹理、细节效果1。</p>
-                                        <img src="../images/product/resolve.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="row question-content"><span>[效果不直观]</span> 客户只能靠自己想象成衣是什么样子的。</div>
-                                <div class="row table-sm-resolve">
-                                    <div class="hidden-lg hidden-md hidden-sm">
-                                        <p>3D成衣展示，效果清晰逼真，支持旋转，缩放查看纹理、细节效果1。</p>
-                                        <img src="../images/product/resolve.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="row question-content"><span>[效果不直观]</span> 客户只能靠自己想象成衣是什么样子的。</div>
-                                <div class="row table-sm-resolve">
-                                    <div class="hidden-lg hidden-md hidden-sm">
-                                        <p>3D成衣展示，效果清晰逼真，支持旋转，缩放查看纹理、细节效果1。</p>
-                                        <img src="../images/product/resolve.png" alt="">
-                                    </div>
-                                </div>-->
                                 <div class="row panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                                     <div class="panel panel-default">
-                                        <div class="question-content" role="tab">
+                                        <div class="question-content active" role="tab">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                                 <span>[效果不直观]</span> 客户只能靠自己想象成衣是什么样子的。
                                             </a>
@@ -181,7 +155,7 @@
                                         <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                                             <div class="table-sm-resolve">
                                                 <div class="hidden-lg hidden-md hidden-sm">
-                                                    <p>3D成衣展示，效果清晰逼真，支持旋转，缩放查看纹理、细节效果1。</p>
+                                                    <p>3D成衣展示，效果清晰逼真，支持旋转，缩放查看纹理、细节效果。</p>
                                                     <img src="../images/product/resolve.png" alt="">
                                                 </div>
                                             </div>
@@ -190,14 +164,14 @@
                                     <div class="panel panel-default">
                                         <div class="question-content" role="tab">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
-                                                <span>[效果不直观]</span> 客户只能靠自己想象成衣是什么样子的。
+                                                <span>[信息不通畅]</span> 定制信息沟通渠道不通畅，并且伴随较多错误。
                                             </a>
                                         </div>
                                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                             <div class="table-sm-resolve">
                                                 <div class="hidden-lg hidden-md hidden-sm">
-                                                    <p>3D成衣展示，效果清晰逼真，支持旋转，缩放查看纹理、细节效果1。</p>
-                                                    <img src="../images/product/resolve.png" alt="">
+                                                    <p>从客户下单到对接生产都有完整的信息记录匹配，由科技代替人工。</p>
+                                                    <img src="../images/product/info.png" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -205,56 +179,111 @@
                                     <div class="panel panel-default">
                                         <div class="question-content" role="tab">
                                             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
-                                                <span>[效果不直观]</span> 客户只能靠自己想象成衣是什么样子的。
+                                                <span>[专业匮乏]</span> 对量体师有较高要求，专业量体师稀缺。
                                             </a>
                                         </div>
                                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                             <div class="table-sm-resolve">
                                                 <div class="hidden-lg hidden-md hidden-sm">
-                                                    <p>3D成衣展示，效果清晰逼真，支持旋转，缩放查看纹理、细节效果1。</p>
-                                                    <img src="../images/product/resolve.png" alt="">
+                                                    <p>人台模型提供需要量体部位，降低量体师工作量，系统还提供成衣标准数据，根据身型进行微调即可。</p>
+                                                    <img src="../images/product/short.png" alt="">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="panel panel-default">
-                                        <div class="question-content" role="tab">
-                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
-                                                <span>[效果不直观]</span> 客户只能靠自己想象成衣是什么样子的。
-                                            </a>
-                                        </div>
-                                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                            <div class="table-sm-resolve">
-                                                <div class="hidden-lg hidden-md hidden-sm">
-                                                    <p>3D成衣展示，效果清晰逼真，支持旋转，缩放查看纹理、细节效果1。</p>
-                                                    <img src="../images/product/resolve.png" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="ques-bottom"></div>
+                                    <div class="more-ques">
+                                        <a href="#"><i class="iconfont icon-guanwang-tubiao-4"></i>查看其它问题</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-8 col-md-8 col-sm-8 hidden-xs">
                                 <div class="row table-resolve">解决方案</div>
                                 <div class="row resolve-content active">
-                                    <p>3D成衣展示，效果清晰逼真，支持旋转，缩放查看纹理、细节效果1。</p>
+                                    <p>3D成衣展示，效果清晰逼真，支持旋转，缩放查看纹理、细节效果。</p>
                                     <img src="../images/product/resolve.png" alt="">
                                 </div>
                                 <div class="row resolve-content">
-                                    <p>3D成衣展示，效果清晰逼真，支持旋转，缩放查看纹理、细节效果2。</p>
-                                    <img src="../images/product/resolve.png" alt="">
+                                    <p>从客户下单到对接生产都有完整的信息记录匹配，由科技代替人工。</p>
+                                    <img src="../images/product/info.png" alt="">
                                 </div>
                                 <div class="row resolve-content">
-                                    <p>3D成衣展示，效果清晰逼真，支持旋转，缩放查看纹理、细节效果3。</p>
-                                    <img src="../images/product/resolve.png" alt="">
-                                </div>
-                                <div class="row resolve-content">
-                                    <p>3D成衣展示，效果清晰逼真，支持旋转，缩放查看纹理、细节效果4。</p>
-                                    <img src="../images/product/resolve.png" alt="">
+                                    <p>人台模型提供需要量体部位，降低量体师工作量，系统还提供成衣标准数据，根据身型进行微调即可。</p>
+                                    <img src="../images/product/short.png" alt="">
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide">
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="row table-question">企业问题</div>
+                                <div class="row panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="question-content active" role="tab">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                                                <span>[线下面料找不到]</span> 面料行业品类繁多、高度碎片化，缺少好的工具进行管理和检索。
+                                            </a>
+                                        </div>
+                                        <div id="collapseOne2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                            <div class="table-sm-resolve">
+                                                <div class="hidden-lg hidden-md hidden-sm">
+                                                    <p>通过面料相似度检索技术，实现快速精准的面料检索，提高面料寻源效率。</p>
+                                                    <img src="../images/product/line-off.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="question-content" role="tab">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo2" aria-expanded="true" aria-controls="collapseOne2">
+                                                <span>[信息不通畅]</span> 定制信息沟通渠道不通畅，并且伴随较多错误。
+                                            </a>
+                                        </div>
+                                        <div id="collapseTwo2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="table-sm-resolve">
+                                                <div class="hidden-lg hidden-md hidden-sm">
+                                                    <p>完整呈现面料详情，面料高清图片，支持360度旋转及大小缩放，清楚查看面料每个细节。</p>
+                                                    <img src="../images/product/line-on.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="question-content" role="tab">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree2" aria-expanded="true" aria-controls="collapseOne2">
+                                                <span>[成衣效果想不出]</span> 样衣制作费时且成本高，面料将来的着装效果，难以呈现。
+                                            </a>
+                                        </div>
+                                        <div id="collapseThree2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                            <div class="table-sm-resolve">
+                                                <div class="hidden-lg hidden-md hidden-sm">
+                                                    <p>通过3D面料着装效果实时渲染，实现快速精准的面料展示多维化，促进销售人员和顾客的沟通交易。</p>
+                                                    <img src="../images/product/tailoring.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ques-bottom"></div>
+                                    <div class="more-ques">
+                                        <a href="#"><i class="iconfont icon-guanwang-tubiao-4"></i>查看其它问题</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-8 hidden-xs">
+                                <div class="row table-resolve">解决方案</div>
+                                <div class="row resolve-content active">
+                                    <p>通过面料相似度检索技术，实现快速精准的面料检索，提高面料寻源效率。</p>
+                                    <img src="../images/product/line-off.png" alt="">
+                                </div>
+                                <div class="row resolve-content">
+                                    <p>完整呈现面料详情，面料高清图片，支持360度旋转及大小缩放，清楚查看面料每个细节。</p>
+                                    <img src="../images/product/line-on.png" alt="">
+                                </div>
+                                <div class="row resolve-content">
+                                    <p>通过3D面料着装效果实时渲染，实现快速精准的面料展示多维化，促进销售人员和顾客的沟通交易。</p>
+                                    <img src="../images/product/tailoring.png" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -339,6 +368,23 @@
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
+            </div>
+            <div class="row">
+                <ul class="logo">
+                    <li><a href=""><img src="../images/logo/1.png" alt=""></a></li>
+                    <li><a href=""><img src="../images/logo/2.png" alt=""></a></li>
+                    <li><a href=""><img src="../images/logo/3.png" alt=""></a></li>
+                    <li><a href=""><img src="../images/logo/4.png" alt=""></a></li>
+                    <li><a href=""><img src="../images/logo/5.png" alt=""></a></li>
+                    <li><a href=""><img src="../images/logo/6.png" alt=""></a></li>
+                    <li><a href=""><img src="../images/logo/7.png" alt=""></a></li>
+                    <li><a href=""><img src="../images/logo/8.png" alt=""></a></li>
+                    <li><a href=""><img src="../images/logo/9.png" alt=""></a></li>
+                    <li><a href=""><img src="../images/logo/10.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="row more">
+                <a class="btn">查看更多案例<i class="iconfont icon-guanwang-tubiao-19"></i></a>
             </div>
         </div>
     </div>

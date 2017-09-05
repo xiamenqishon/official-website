@@ -24,7 +24,7 @@ $(function () {
     })
 
     $(".tab-horizontal li").on('touchstart mousedown', function(e) {
-        e.preventDefault()
+        e.preventDefault();
         $(".tab-horizontal .active").removeClass('active');
         $(this).addClass('active');
         pain.slideTo($(this).index());
@@ -36,7 +36,7 @@ $(function () {
     $(".panel-default").hover(function () {
         $(".panel-default .active").removeClass("active");
         $(this).find(".question-content").addClass("active");
-        var $resolve = $(".resolve-content");
+        var $resolve = $(this).closest('.swiper-slide').find(".resolve-content");
         $resolve.parent().find(".active").removeClass("active");
         $resolve.eq($(this).index()).addClass("active");
     })
