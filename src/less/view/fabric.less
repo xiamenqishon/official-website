@@ -1,15 +1,26 @@
-/* 通用 */
-.t-c{
-  text-align: center;
-}
-@customization-fa:#fafafa;
-@customization-gray:#dddddd;
-@customization-gray2:#999999;
-@customization-gray3:#333333;
-@customization-blue:#33b3ed;
+.fabric{
+  @customization-fa:#fafafa;
+  @customization-gray:#dddddd;
+  @customization-gray2:#999999;
+  @customization-gray3:#333333;
+  @customization-blue:#33b3ed;
 
-.customization{
-
+  .header-button{
+    padding: 0;
+    margin: 0;
+    .regist-login{
+      padding: 1.8rem 0 2.5rem;
+      a{
+        border: 1px solid @customization-blue;
+        color: @customization-blue;
+        border-radius: 0.3rem;
+      }
+      a:hover{
+        background-color: @customization-blue;
+        color: white;
+      }
+    }
+  }
   .none-px{
     padding: 0 0 5% 0;
     margin: 0;
@@ -133,21 +144,6 @@
 }
 
 
-.square {
-  position: relative;
-  margin: 0 auto;
-  img{
-    width: 80%;
-  }
-  .cont{
-    position: absolute;
-    top: 42%;
-    width: 80%;
-    text-align: center;
-    font-size: 1.6rem;
-  }
-}
-
 
 /*媒体查询*/
 /*当页面大于1200px时，大屏幕，主要是pc端*/
@@ -161,53 +157,23 @@
   .regist-login a {
     padding: 0.6rem 1.2rem;
   }
-  .square{
-    .cont{
-      font-size: 1.4rem;
-    }
-  }
 }
 /*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
 @media (min-width: 768px) and (max-width: 991px){
   .regist-login a {
     padding: 0.5rem 1.1rem;
   }
-  .square{
-    .cont{
-      font-size: 1.2rem;
-    }
-  }
 }
 /*在480和767像素之间的屏幕里，超小屏幕，主要用于手机*/
 @media (min-width: 480px) and (max-width: 767px) {
-  .img-display{
-    display: none;
-  }
   .regist-login a {
     padding: 0.4rem 1rem;
-  }
-  .square{
-    .cont{
-      font-size: 1rem;
-    }
   }
 }
 /*在小于480像素的屏幕，微小屏幕，更低分辨率的手机*/
 @media (max-width: 479px) {
-  .img-display{
-    display: none;
-  }
   .regist-login a {
     padding: 0.3rem 0.9rem;
     font-size: 0.8rem;
-  }
-  .square{
-    img{
-      width: 120%;
-    }
-    .cont{
-      font-size: 0.9rem;
-      width: 120%;
-    }
   }
 }
