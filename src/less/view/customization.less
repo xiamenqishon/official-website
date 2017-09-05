@@ -1,140 +1,173 @@
+/* 通用 */
 .t-c{
   text-align: center;
 }
-.none-px{
-  padding: 0 0 5% 0;
-  margin: 0;
-  background-color: #fafafa;
-  .cus-h3{
-    background-color: #fafafa;
-    margin: 2% 0;
-  }
-  .border{
-    border: 1px solid #dddddd;
-    background-color: white;
-    //margin: 10px;
-    .cus-p{
-      margin: 3% 0;
-      font-size: 1.4rem;
-      span{
-        color: #999999;
-      }
-    }
-    .cus{
-      border: none;
-      img{
-        height: 42px;
-      }
-      .cus-title{
-        padding: 5% 0;
-        font-size: 1.4rem;
-      }
-      .cus-detail{
-        color: #9f9f9f;
-      }
-    }
-  }
-  .cus-enter{
-    color: #33b3ed;
-    cursor: pointer;
-    span{
-      position: relative;
-      display:inline-block;
-      margin-left: 5px;
-      width: 0;
-      height: 0;
-      border-top: 5px solid transparent;
-      border-bottom: 5px solid transparent;
-      border-left: 8px solid #33b3ed;
-    }
-  }
-}
-.data{
-  padding: 0;
-  margin: 0 0 5% 0;
-  .data-title{
-    margin:4% 0 2% 0;
-    color: #333333;
-    font-size: 2.5rem;
-  }
-  .data-title-s{
-    font-size: 1.2rem;
-    margin-bottom: 2%;
-  }
-  .thumbnail{
-    height: 400px;
-    border-radius: 0;
-    border-top: 3px solid #33b3ed;
-    .caption-title{
-      font-size: 1.8rem;
-      color: #33b3ed;
-    }
-    .caption-detail{
-      font-size: 1.3rem;
-    }
-  }
-  .detail{
-    margin-top: 3%;
-    span{
-      color: #33b3ed;
-      font-size: 1.2rem;
-      padding: 8px 6px;
-      border: 1px solid #33b3ed;
-      border-radius: 5px;
-    }
-  }
-}
+@customization-fa:#fafafa;
+@customization-gray:#dddddd;
+@customization-gray2:#999999;
+@customization-gray3:#333333;
+@customization-blue:#33b3ed;
 
-.download{
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  background-color: #4d4d4d;
-  .thumbnail{
-    border: none;
+.customization{
+  .header-button{
     padding: 0;
     margin: 0;
-    background-color: #4d4d4d;
-  }
-}
-
-.my-tab2{
-  padding: 0;
-  margin: 0;
-  a{
-    font-size: 1.5rem;
-    .nav-tab-child{
-      padding: 20px 30px;
-      span{
-        margin-left: 5%;
+    .regist-login{
+      padding: 1.8rem 0 2.5rem;
+      a{
+        border: 1px solid @customization-blue;
+        color: @customization-blue;
+        border-radius: 0.3rem;
       }
-      &#active{
-        background-color: #dddddd;
+      a:hover{
+        background-color: @customization-blue;
+        color: white;
       }
     }
   }
+  .none-px{
+    padding: 0 0 5% 0;
+    margin: 0;
+    background-color: @customization-fa;
+    .cus-h3{
+      background-color: @customization-fa;
+      margin: 2% 0;
+    }
+    .border{
+      border: 1px solid @customization-gray;
+      background-color: white;
+      .my-tab2{
+        padding: 0;
+        margin: 0;
+        a{
+          font-size: 1.5rem;
+          .nav-tab-child{
+            padding: 2rem 2rem;
+            span{
+              margin-left: 10%;
+            }
+            &#active{
+              background-color: @customization-gray;
+            }
+          }
+        }
+      }
+      .cus-p{
+        margin: 3% 0;
+        font-size: 1.4rem;
+        span{
+          color: @customization-gray2;
+        }
+      }
+      .get{
+        padding: 0 10%;
+        .cus{
+          border: none;
+          .icon{
+            text-align: center;
+            i{
+              font-size: 3.5rem;
+            }
+          }
+          .cus-title{
+            padding: 5% 0;
+            font-size: 1.4rem;
+            height: 3rem;
+          }
+          .cus-detail{
+            color: @customization-gray2;
+            height: 3rem;
+          }
+        }
+      }
+    }
+    .cus-enter{
+      color: @customization-blue;
+      cursor: pointer;
+      span{
+        position: relative;
+        display:inline-block;
+        margin-left: 5px;
+        width: 0;
+        height: 0;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 8px solid @customization-blue;
+      }
+    }
+  }
+  .data{
+    padding: 0;
+    margin: 0 0 5% 0;
+    .data-title{
+      margin:4% 0 2% 0;
+      color: @customization-gray3;
+      font-size: 2.5rem;
+    }
+    .data-title-s{
+      font-size: 1.2rem;
+      margin-bottom: 2%;
+    }
+    .thumbnail{
+      height: 400px;
+      border-radius: 0;
+      border-top: 3px solid @customization-blue;
+      .caption-title{
+        font-size: 1.8rem;
+        color: @customization-blue;
+      }
+      .caption-detail{
+        font-size: 1.3rem;
+      }
+    }
+    .detail{
+      margin-top: 3%;
+      span{
+        color: @customization-blue;
+        font-size: 1.2rem;
+        padding: 8px 6px;
+        border: 1px solid @customization-blue;
+        border-radius: 5px;
+      }
+    }
+  }
+  .download{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    background-color: #4d4d4d;
+    img{
+      width: 22%;
+      border: none;
+      padding: 0;
+      margin: 0 5%;
+      background-color: #4d4d4d;
+    }
+  }
 }
+
 
 .square {
   position: relative;
   margin:4rem 8rem;
-  width: 10rem;
-  height: 10rem;
+  width: 12rem;
+  height: 12rem;
   background-color: #f0f0f0;
   transform: rotate(45deg);
   .num{
     position: absolute;
-    top: 1.2rem;
+    top: 3.5rem;
     left: -1.7rem;
-    color: #999999;
+    color: @customization-gray2;
     font-size: 3.5rem;
     transform: rotate(-45deg);
   }
   .num2{
     position: absolute;
-    top: 8.3rem;
+    top: 10rem;
     left: 5rem;
-    color: #999999;
+    color: @customization-gray2;
     font-size: 3.5rem;
     transform: rotate(-45deg);
   }
@@ -149,15 +182,41 @@
 }
 
 
+/*媒体查询*/
+/*当页面大于1200px时，大屏幕，主要是pc端*/
+@media (min-width: 1200px) {
+  .regist-login a {
+    padding: 0.8rem 1.5rem;
+  }
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的pc*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .regist-login a {
+    padding: 0.6rem 1.2rem;
+  }
+}
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width: 768px) and (max-width: 991px){
+  .regist-login a {
+    padding: 0.5rem 1.1rem;
+  }
+}
 /*在480和767像素之间的屏幕里，超小屏幕，主要用于手机*/
 @media (min-width: 480px) and (max-width: 767px) {
   .img-display{
     display: none;
+  }
+  .regist-login a {
+    padding: 0.4rem 1rem;
   }
 }
 /*在小于480像素的屏幕，微小屏幕，更低分辨率的手机*/
 @media (max-width: 479px) {
   .img-display{
     display: none;
+  }
+  .regist-login a {
+    padding: 0.3rem 0.9rem;
+    font-size: 0.8rem;
   }
 }
