@@ -1,6 +1,6 @@
 $(function () {
     var banner = new Swiper('.banner', {
-        autoplay: 5000, //可选选项，自动滑动
+        // autoplay: 5000, //可选选项，自动滑动
         loop: true,
         pagination: '.swiper-pagination',
         paginationClickable: true
