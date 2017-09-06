@@ -52,8 +52,8 @@
             </div>
         </div>
         <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 regist-login">
-            <a href="javascript:;" class="regist">注册</a>
-            <a href="javascript:;" class="login">登录</a>
+            <a href="./building.html" class="regist">注册</a>
+            <a href="./building.html" class="login">登录</a>
         </div>
     </div>
     <div class="tab-content">
@@ -130,10 +130,10 @@
                         <div class="tab-pane fade in active" id="service">
                             <div class="">
                                 <p class="cus-p t-c">
-                                <div class="my-tab">
-                                    <a href="#get2" data-toggle="tab" class="nav-tab active">我能得到什么</a>
+                                <div class="my-tab-span">
+                                    <a href="#get2" data-toggle="tab" class="nav-tab-span active">我能得到什么</a>
                                     |
-                                    <a href="#stay2" data-toggle="tab" class="nav-tab"><span>入驻流程</span></a>
+                                    <a href="#stay2" data-toggle="tab" class="nav-tab-span"><span>入驻流程</span></a>
                                 </div>
                                 </p>
                                 <div class="tab-content">
@@ -242,7 +242,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="cus-enter t-c">进入文档中心<span class=""></span></p>
+                                <p class="cus-enter t-c"><a href="#books" data-toggle="tab" class="books">进入文档中心<span class=""></span></a></p>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="brands">
@@ -315,7 +315,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="cus-enter t-c">进入文档中心<span class=""></span></p>
+                            <p class="cus-enter t-c"><a href="#books" data-toggle="tab" class="books">进入文档中心<span class=""></span></a></p>
                         </div>
                     </div>
                 </div>
@@ -349,16 +349,22 @@
                         </div>
                     </div>
 
-                    <div class="detail t-c"><span>查看安全详情 ></span></div>
+                    <div class="detail t-c"><a href="./building.html"><span>查看安全详情 ></span></a></div>
                 </div>
                 <div class="col-lg-3 col-md-3"></div>
             </div>
             <div class="row download">
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 t-c col-lg-offset-2 col-md-offset-2">
                     <div class="">
-                        <img src="../images/customization/cus11.png" alt="">
-                        <img src="../images/customization/cus12.png" alt="">
-                        <img src="../images/customization/cus13.png" alt="">
+                        <a href="./building.html">
+                            <img src="../images/customization/cus11.png" alt="">
+                        </a>
+                        <a href="./building.html">
+                            <img src="../images/customization/cus12.png" alt="">
+                        </a>
+                        <a href="./building.html">
+                            <img src="../images/customization/cus13.png" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -540,6 +546,7 @@
 <script src="../scripts/plugins/jquery-2.1.1.min.js"></script>
 <script src="../scripts/plugins/bootstrap.min.js"></script>
 <script src="../scripts/common.js"></script>
+<script src="../scripts/fabric.js"></script>
 <script src="../scripts/plugins/swiper-3.4.2.jquery.min.js"></script>
 <script>
     $(function () {
@@ -550,6 +557,13 @@
             paginationClickable: true
         })
     })
+    /**
+     * 跳转到文档中心
+     */
+    $('.books').click(function () {
+        $('.my-tab').parent().find('.active').removeClass();
+        $('.my-tab').find('a').eq(1).addClass('active');
+    });
 </script>
 
 </body>

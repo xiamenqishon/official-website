@@ -28,6 +28,17 @@
     .border{
       border: 1px solid @customization-gray;
       background-color: white;
+      .my-tab-span{
+        text-align: center;
+        margin: 5% 0;
+        a{
+          font-size: 1.4rem;
+          color: @customization-gray2;
+          &.active{
+            color: black;
+          }
+        }
+      }
       .my-tab2{
         padding: 0;
         margin: 0;
@@ -114,12 +125,14 @@
     }
     .detail{
       margin-top: 3%;
-      span{
-        color: @customization-blue;
-        font-size: 1.2rem;
-        padding: 8px 6px;
-        border: 1px solid @customization-blue;
-        border-radius: 5px;
+      a{
+        span{
+          color: @customization-blue;
+          font-size: 1.2rem;
+          padding: 8px 6px;
+          border: 1px solid @customization-blue;
+          border-radius: 5px;
+        }
       }
     }
   }

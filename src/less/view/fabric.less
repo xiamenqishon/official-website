@@ -17,6 +17,12 @@
       background: url('../images/customization/banner.png') no-repeat;
     }
   }
+  .nav-tab-white{
+    background-color: @customization-gray2;
+    &.active{
+      background-color: @customization-fa;
+    }
+  }
 
   .header-button{
     padding: 0;
@@ -45,6 +51,17 @@
     .border{
       border: 1px solid @customization-gray;
       background-color: white;
+      .my-tab-span{
+        text-align: center;
+        margin: 5% 0;
+        a{
+          font-size: 1.4rem;
+          color: @customization-gray2;
+          &.active{
+            color: black;
+          }
+        }
+      }
       .my-tab2{
         padding: 0;
         margin: 0;
@@ -52,11 +69,12 @@
           font-size: 1.5rem;
           .nav-tab-child{
             padding: 2rem 2rem;
+            background-color: @customization-gray;
             span{
               margin-left: 10%;
             }
             &#active{
-              background-color: @customization-gray;
+              background-color: white;
             }
           }
         }
@@ -91,17 +109,19 @@
       }
     }
     .cus-enter{
-      color: @customization-blue;
-      cursor: pointer;
-      span{
-        position: relative;
-        display:inline-block;
-        margin-left: 5px;
-        width: 0;
-        height: 0;
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
-        border-left: 8px solid @customization-blue;
+      a{
+        color: @customization-blue;
+        cursor: pointer;
+        span{
+          position: relative;
+          display:inline-block;
+          margin-left: 5px;
+          width: 0;
+          height: 0;
+          border-top: 5px solid transparent;
+          border-bottom: 5px solid transparent;
+          border-left: 8px solid @customization-blue;
+        }
       }
     }
   }
