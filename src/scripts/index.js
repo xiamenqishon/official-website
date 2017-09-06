@@ -16,6 +16,8 @@ $(function () {
     });
 
     var resolveSwiper = new Swiper('.resolve-swiper',{
+        autoplay: 5000, //可选选项，自动滑动
+        loop: true,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
         slidesPerView: 'auto',
@@ -40,4 +42,6 @@ $(function () {
         $resolve.parent().find(".active").removeClass("active");
         $resolve.eq($(this).index()).addClass("active");
     })
+
+
 })

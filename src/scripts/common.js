@@ -1,13 +1,13 @@
-/**
- * description：通用js文件
- * author：洪俊勇
- * createTime：2017/8/31
- * version:1.0.0.0
- * history:
- *   1、
- *   2、
- */
 $(function(){
+    /**
+     * description：通用js文件
+     * author：洪俊勇
+     * createTime：2017/8/31
+     * version:1.0.0.0
+     * history:
+     *   1、
+     *   2、
+     */
     /**
      * 通用：tab页面切换(tab在同级)
      */
