@@ -47,40 +47,11 @@
     </nav>
 
     <!-- swiper -->
-    <div class="qs-swiper">
+    <div class="qs-swiper case-swiper">
         <!-- swiper component -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide slide-one" style="background:url('../images/case/swiper01.png');">
-                    <!-- swiper title demo -->
-                    <div class="container">
-                        <div class="row">
-                            <div class="qs-swiper__title col-xs-7 col-sm-7 col-md-8 col-lg-5">
-                                <h2 class="qs-swiper__title__h">面料扫描系统的应用</h2>
-                                <p class="qs-swiper__title__p">利郎通过使用我们的面料扫描仪系统和面料展示系统方案解决了传统采集方式面料信息无法完整和真实的难题</p>
-                                <div class="qs-swiper__title__btnpanel">
-                                    <a href="#" class="qs-swiper__title__btnpanel__btndetail">查看详情</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide slide-two" style="background:url('../images/case/swiper01.png');">
-                    <!-- swiper title demo -->
-                    <div class="container">
-                        <div class="row">
-                            <div class="qs-swiper__title col-xs-7 col-sm-7 col-md-8 col-lg-5">
-                                <h2 class="qs-swiper__title__h">面料扫描系统的应用</h2>
-                                <p class="qs-swiper__title__p">利郎通过使用我们的面料扫描仪系统和面料展示系统方案解决了传统采集方式面料信息无法完整和真实的难题</p>
-                                <div class="qs-swiper__title__btnpanel">
-                                    <a href="#" class="qs-swiper__title__btnpanel__btndetail">立即注册</a>
-                                    <a href="#" class="qs-swiper__title__btnpanel__btndetail">查看详情</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide slide-three" style="background:url('../images/case/swiper01.png');">
+                <div class="swiper-slide slide-one">
                     <!-- swiper title demo -->
                     <div class="container">
                         <div class="row">
@@ -95,7 +66,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-pagination"></div> -->
         </div>
     </div>
 
@@ -348,9 +319,9 @@
         $(function () {
             var mySwiper = new Swiper('.swiper-container', {
                 autoplay: 5000, //可选选项，自动滑动
-                loop: true,
+                loop: false,
                 pagination: '.swiper-pagination',
-                paginationClickable: true
+                paginationClickable: false
             })
         })
     </script>
