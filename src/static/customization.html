@@ -52,8 +52,8 @@
                                 <h2 class="qs-swiper__title__h">定制平台</h2>
                                 <p class="qs-swiper__title__p">通过3D生成的3D虚拟鞋子应用于官方商城Web订制实时、直观展现客户个性化订制选择效果</p>
                                 <div class="qs-swiper__title__btnpanel">
-                                    <a href="#" class="qs-swiper__title__btnpanel__btndetail">立即注册</a>
-                                    <a href="#" class="qs-swiper__title__btnpanel__btndetail">查看详情</a>
+                                    <a href="./building.html" class="qs-swiper__title__btnpanel__btndetail">立即注册</a>
+                                    <a href="./building.html" class="qs-swiper__title__btnpanel__btndetail">查看详情</a>
                                 </div>
                             </div>
                         </div>
@@ -67,10 +67,10 @@
         <h3 class="cus-h3 t-c">欢迎进入定制平台</h3>
         <div class="col-lg-8 col-md-8 col-lg-offset-2 col-md-offset-2 border">
             <p class="cus-p t-c">
-            <div class="my-tab">
-                <a href="#get" data-toggle="tab" class="nav-tab active">我能得到什么</a>
+            <div class="my-tab-span">
+                <a href="#get" data-toggle="tab" class="nav-tab-span active">我能得到什么</a>
                 |
-                <a href="#stay" data-toggle="tab" class="nav-tab"><span>入驻流程</span></a>
+                <a href="#stay" data-toggle="tab" class="nav-tab-span"><span>入驻流程</span></a>
             </div>
             <div class="tab-content">
                 <div class="tab-pane fade in active" id="get">
@@ -234,16 +234,22 @@
                 </div>
             </div>
 
-            <div class="detail t-c"><span>查看安全详情 ></span></div>
+            <div class="detail t-c"><a href="./building.html"><span>查看安全详情 ></span></a></div>
         </div>
         <div class="col-lg-3 col-md-3"></div>
     </div>
     <div class="row download">
         <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 t-c col-lg-offset-2 col-md-offset-2">
             <div class="">
-                <img src="../images/customization/cus11.png" alt="">
-                <img src="../images/customization/cus12.png" alt="">
-                <img src="../images/customization/cus13.png" alt="">
+                <a href="./building.html">
+                    <img src="../images/customization/cus11.png" alt="">
+                </a>
+                <a href="./building.html">
+                    <img src="../images/customization/cus12.png" alt="">
+                </a>
+                <a href="./building.html">
+                    <img src="../images/customization/cus13.png" alt="">
+                </a>
             </div>
         </div>
     </div>
@@ -297,6 +303,12 @@
 <script src="../scripts/plugins/jquery-2.1.1.min.js"></script>
 <script src="../scripts/plugins/bootstrap.min.js"></script>
 <script src="../scripts/common.js"></script>
-
+<script>
+    $(function () {
+        $('.cus-enter').click(function () {
+            window.location.href = '../static/fabric.html?tag=1';
+        });
+    });
+</script>
 </body>
 </html>
