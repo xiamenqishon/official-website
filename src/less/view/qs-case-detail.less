@@ -1,0 +1,89 @@
+.caseDetail__content{
+
+    @caseDetailTab__Color:#00a0e9;
+
+    @caseDetail__TR:3rem;
+
+    padding:5.5rem 0;
+    .caseDetail__content__p{
+        font-size:1.33rem;
+        font-weight:300;
+        letter-spacing: 1px;
+        line-height: 2rem;
+        text-align:justify;
+        padding:0 15px;
+    }
+    .caseDetail__content__imgtab{
+        margin-top: @caseDetail__TR;
+        .caseDetail__content__imgtab--title{
+            margin: 5rem 0;
+            padding:0 4rem;
+            border-left:0.3rem solid @caseDetailTab__Color;
+            p{
+                vertical-align: middle;
+                line-height: 3rem;
+                font-size: 1.33rem;
+                font-weight:300;
+                text-align:justify;
+                color: #2ebdff;
+            }
+        }
+        .caseDetail__content__imgtab--img{
+            padding:0;
+            img{
+                width:100%;
+            }
+        }
+    }
+
+    .caseDetail__content__table{
+        margin-top: @caseDetail__TR;
+        thead{
+            th{
+                padding-left:1rem;
+                font-size: 1.6rem;
+                font-weight:400;
+            }
+        }
+        tbody{
+            tr{
+                height:10rem;
+                td{
+                    padding:1rem;
+                    font-size:1.33rem;
+                    letter-spacing:1px;
+                    font-weight:300;
+                    text-align:justify;
+                }
+            }
+        }
+    }
+    .caseDetail__content__cdbottom{
+        margin-top:@caseDetail__TR;
+        img{
+            width:100%;
+        }
+    }
+    .caseDetail__content__footer{
+        margin-top:5rem;
+        .caseDetail__content__footer__title{
+            padding:0 15px 0.5rem;
+            h2{
+                font-size: 2rem;
+                font-weight:400;
+            }
+            a{
+                float:right;
+                margin-top:-2.5rem;
+            }
+        }
+        .caseDetail__content__footer__li{
+            margin-top:1rem;
+            text-align: center;
+            .qs-card{
+                display:inline-block;
+                text-align: left;
+            }
+        }
+    }
+}
