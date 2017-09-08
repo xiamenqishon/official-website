@@ -59,7 +59,7 @@ $(function () {
         </div>
     *
     */
-    function changeTabComponent() {
+    function ChangeTabComponent() {
         var $tabList = $('.webTab');
 
         function changeTab(tabPanel) {
@@ -98,6 +98,6 @@ $(function () {
             })(i)
         }
     }
-    changeTabComponent();
+    ChangeTabComponent();
 
 });
