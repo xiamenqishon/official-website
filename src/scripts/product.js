@@ -11,4 +11,18 @@ $(function () {
             tabId.addClass("active in");
         }
     }
+
+    /**
+     * 产品页footer跳转问题
+     */
+    $('.nav-tab-footer').click(function () {
+        var name = $(this).attr('name');
+        if(name){
+            $('.nav-tab').parent().find('a').removeClass("active");
+            $('.nav-tab').eq(name).addClass('active')
+            positioning(0,0);
+        }
+    });
+
+
 })

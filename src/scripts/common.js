@@ -101,3 +101,19 @@ $(function () {
     ChangeTabComponent();
 
 });
+
+/**
+ * 通用：滚动条定位
+ * 调用：
+ * positioning(0,0);            // 置顶
+ * positioning(0,"bottom");     // 置底
+ * @param x
+ * @param y
+ */
+function positioning(x, y) {
+    if (y == "bottom") {              // 滚动条置底
+        window.scrollTo(x, document.body.scrollHeight);
+    } else {                          // 根据X轴、Y轴位置定位滚动条
+        window.scrollTo(x, y);
+    }
+}
