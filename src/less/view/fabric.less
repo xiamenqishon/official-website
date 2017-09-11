@@ -33,6 +33,7 @@
         border: 1px solid @customization-blue;
         color: @customization-blue;
         border-radius: 0.3rem;
+        padding: 0.8rem 1.2rem;
       }
       a:hover{
         background-color: @customization-blue;
@@ -44,6 +45,11 @@
     padding: 0 0 5% 0;
     margin: 0;
     background-color: @customization-fa;
+    .tab-pane{
+      h4{
+        padding: 3.5rem 0;
+      }
+    }
     .cus-h3{
       font-weight: 400;
       background-color: @customization-fa;
@@ -56,6 +62,7 @@
         text-align: center;
         margin: 5% 0;
         a{
+          padding: 0 2%;
           font-size: 1.4rem;
           color: @customization-gray2;
           &.active{
@@ -71,12 +78,38 @@
           .nav-tab-child{
             padding: 2rem 2rem;
             background-color: @customization-gray;
+            position: relative;
+            &:after{
+              content:'';
+              display:inline-block;
+              width:1px;
+              height:5rem;
+              background-color: #fff;
+              position: absolute;
+              right:0;
+              top:2rem;
+            }
             span{
               margin-left: 10%;
+            }
+            img{
+              height: 5rem;
+              width: 5rem;
             }
             &#active{
               background-color: white;
             }
+
+          }
+          &:last-child{
+            .nav-tab-child{
+              border-right: none;
+              &:after{
+                content:'';
+                display:none;
+              }
+            }
+
           }
         }
       }
@@ -213,7 +246,7 @@
 /*在小于480像素的屏幕，微小屏幕，更低分辨率的手机*/
 @media (max-width: 479px) {
   .regist-login a {
-    padding: 0.3rem 0.9rem;
+    padding: 0.3rem 0.5rem;
     font-size: 0.8rem;
   }
 }
