@@ -78,6 +78,7 @@
           .nav-tab-child{
             padding: 2rem 2rem;
             background-color: @customization-gray;
+            text-align: center;
             position: relative;
             &:after{
               content:'';
@@ -89,18 +90,12 @@
               right:0;
               top:2rem;
             }
-            p{
-              //margin:0 auto;
-              width: 75%;
-              display: inline-block;
-              text-align: center;
-            }
             img{
-              //height: 5rem;
-              //width: 5rem;
-              width: 22%;
-              max-width: 22%;
-              display: inline-block;
+              height: 5rem;
+              width: 5rem;
+            }
+            span{
+
             }
             &#active{
               background-color: white;
@@ -230,11 +225,21 @@
   .regist-login a {
     padding: 0.8rem 1.5rem;
   }
+  .nav-tab-child{
+    span{
+      margin-left: 10%;
+    }
+  }
 }
 /*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的pc*/
 @media (min-width: 992px) and (max-width: 1199px) {
   .regist-login a {
     padding: 0.6rem 1.2rem;
+  }
+  .nav-tab-child{
+    span{
+      margin-left: 10%;
+    }
   }
 }
 /*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
@@ -242,11 +247,26 @@
   .regist-login a {
     padding: 0.5rem 1.1rem;
   }
+  .nav-tab-child{
+    span{
+      margin-left: 10%;
+    }
+  }
 }
 /*在480和767像素之间的屏幕里，超小屏幕，主要用于手机*/
 @media (min-width: 480px) and (max-width: 767px) {
   .regist-login a {
     padding: 0.4rem 1rem;
+  }
+  .nav-tab-child{
+    img{
+      height: 4rem;
+      width: 4rem;
+    }
+    span{
+      display: block;
+      margin-left: 0;
+    }
   }
 }
 /*在小于480像素的屏幕，微小屏幕，更低分辨率的手机*/
@@ -254,5 +274,14 @@
   .regist-login a {
     padding: 0.3rem 0.5rem;
     font-size: 0.8rem;
+  }
+  .nav-tab-child{
+    padding: 0;
+    margin: 0;
+    span{
+      display: block;
+      margin-left: 0;
+      font-size: 1.5rem;
+    }
   }
 }
