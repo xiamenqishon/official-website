@@ -1,0 +1,67 @@
+@talent-table-header-color:#FAFAFA;
+@talent-background-color:#EEEEEE;
+
+
+.talent-gray{
+  background-color: @talent-table-header-color;
+  .talent-cont{
+    background-color: white;
+    margin-top: 2rem;
+  }
+  .table-responsive{
+    padding: 2rem 4rem;
+    .qs-talent-border{
+      border: 1px solid #DDDDDD;
+      .qs-talent-header{
+        background-color: @talent-table-header-color;
+      }
+    }
+    .qs-pagination{
+      position: relative;
+      width: auto;
+      a{
+        color: black;
+      }
+    }
+  }
+}
+
+/*媒体查询*/
+/*当页面大于1200px时，大屏幕，主要是pc端*/
+@media (min-width: 1200px) {
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的pc*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width: 768px) and (max-width: 991px){
+
+}
+/*在480和767像素之间的屏幕里，超小屏幕，主要用于手机*/
+@media (min-width: 480px) and (max-width: 767px) {
+
+}
+/*在小于480像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width: 479px) {
+  .table-responsive{
+    .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th{
+      padding: auto 0;
+    }
+    th, td{
+      height: 30px;
+      min-height: 30px;
+      line-height: 30px;
+    }
+  }
+
+  .talent-gray{
+    .table-responsive{
+      padding: 0;
+      .qs-talent-border{
+        font-size: 11px;
+      }
+    }
+  }
+}

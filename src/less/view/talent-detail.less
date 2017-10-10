@@ -1,0 +1,57 @@
+@detail-color:#FAFAFA;
+@detail-border-color:#EEEEEE;
+
+.talent-body{
+  background-color: @detail-color;
+  .container{
+    //padding: 0;
+    //margin: 0;
+    .qs-talent-detail{
+      background-color: white;
+      padding: 2rem;
+      margin: 2rem 0;
+      .detail-label{
+        margin: 1rem 0;
+        padding: 0.5rem 0 0 0.3rem;
+        border-bottom: 1px solid @detail-border-color;
+      }
+      .qs-talent-title{
+        margin: 1rem 0;
+        padding: 1.5rem 0 1.5rem 1.5rem;
+        background-color: @detail-color;
+      }
+      .detail-padding{
+        margin: 1.5rem 0 0 1.5rem;
+      }
+    }
+  }
+
+}
+
+/*媒体查询*/
+/*当页面大于1200px时，大屏幕，主要是pc端*/
+@media (min-width: 1200px) {
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的pc*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width: 768px) and (max-width: 991px){
+
+}
+/*在480和767像素之间的屏幕里，超小屏幕，主要用于手机*/
+@media (min-width: 480px) and (max-width: 767px) {
+
+}
+/*在小于480像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width: 479px) {
+  .talent-body {
+    .container {
+      .qs-talent-detail{
+        padding: 2rem 0.5rem;
+      }
+    }
+  }
+}
