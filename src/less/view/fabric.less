@@ -79,17 +79,17 @@
             padding: 2rem 2rem;
             background-color: @customization-gray;
             text-align: center;
-            position: relative;
-            &:after{
-              content:'';
-              display:inline-block;
-              width:1px;
-              height:5rem;
-              background-color: #fff;
-              position: absolute;
-              right:0;
-              top:2rem;
-            }
+            //position: relative;
+            //&:after{
+            //  content:'';
+            //  display:inline-block;
+            //  width:1px;
+            //  height:5rem;
+            //  background-color: #fff;
+            //  position: absolute;
+            //  right:0;
+            //  top:2rem;
+            //}
             img{
               height: 5rem;
               width: 5rem;
@@ -101,6 +101,32 @@
               background-color: white;
             }
 
+          }
+          .fabric-after-solid{
+            position: relative;
+            &:after{
+              content:'';
+              display:inline-block;
+              width:1px;
+              height:5rem;
+              background-color: #fff;
+              position: absolute;
+              right:0;
+              top:2rem;
+            }
+          }
+          .about-after-solid{
+            position: relative;
+            &:after{
+              content:'';
+              display: inline-block;
+              width: 1px;
+              height: 4rem;
+              background-color: #fff;
+              position: absolute;
+              right: 0;
+              top: 1rem;
+            }
           }
           &:last-child{
             .nav-tab-child{
