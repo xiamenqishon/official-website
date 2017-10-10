@@ -1,0 +1,117 @@
+.about-tab-content{
+  .about-tab1{
+    padding: 5% 10%;
+    img{
+      height: 100%;
+      width: 100%;
+      margin: 1rem 0;
+    }
+    p{
+      text-indent: 2em;
+      font-size: 1.4rem;
+      line-height: 2.5rem;
+    }
+  }
+  .about-tab2{
+    padding: 5% 10%;
+    .m-t-60{
+      margin-top: 5.5rem;
+    }
+    .about-develop-head-left{
+      text-align: right;
+      height: 51px;
+      line-height: 51px;
+    }
+    .about-develop-head-right{
+      height: 51px;
+      line-height: 51px;
+    }
+    .about-develop-num-left{
+      text-align: right;
+      height: 182px;
+      line-height: 182px;
+      padding-left: 0;
+    }
+    .about-develop-char-right{
+      padding-right: 0;
+    }
+    .about-develop-char-left{
+      text-align: right;
+      padding-left: 0;
+    }
+    .about-develop-num-right{
+      margin-top: 80px;
+    }
+  }
+  .about-tab3{
+    padding: 5% 10%;
+    .about-honer{
+      margin-top: 5%;
+    }
+    .about-title{
+      font-size: 1.7rem;
+      font-weight: inherit;
+      margin: 1.5rem 0;
+    }
+    p{
+      font-size: 1.4rem;
+      padding: 0 0 0 20px;
+      background: url("../images/about/about15.png") no-repeat;
+      background-position: 0 5px;
+    }
+    img{
+      height: 100%;
+      width: 100%;
+      margin: 1rem 0;
+    }
+  }
+}
+
+
+/*媒体查询*/
+/*当页面大于1200px时，大屏幕，主要是pc端*/
+@media (min-width: 1200px) {
+
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的pc*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width: 768px) and (max-width: 991px){
+
+}
+/*在480和767像素之间的屏幕里，超小屏幕，主要用于手机*/
+@media (min-width: 480px) and (max-width: 767px) {
+  .about-tab-content {
+    .about-tab2{
+      padding: 2% 1%;
+      .m-t-sm-60{
+        margin-top: 60px;
+      }
+    }
+  }
+
+}
+/*在小于480像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width: 479px) {
+  .about-tab-content {
+    .about-tab2{
+      padding: 2% 1%;
+      .m-t-xs-40{
+        margin-top: 40px;
+      }
+      .m-t-xs-20{
+        margin-top: 20px;
+      }
+      .m-t-xs-10{
+        margin-top: 10px;
+      }
+    }
+  }
+  .nav-tab-child {
+    span{
+      font-size: 1.2rem;
+    }
+  }
+}
