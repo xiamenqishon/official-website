@@ -58,76 +58,95 @@
                         <th class="t-c">招聘人数</th>
                         <th class="t-c">发布时间</th>
                     </tr>
-                    <tr>
-                        <td>JAVA开发工程师</td>
-                        <td>研发部</td>
-                        <td>5</td>
-                        <td>2017.09.08</td>
-                    </tr>
-                    <tr>
-                        <td>产品开发经理</td>
+                    <tr id="C++">
+                        <td>C++开发工程师</td>
                         <td>研发部</td>
                         <td>1</td>
                         <td>2017.09.08</td>
                     </tr>
-                    <tr>
-                        <td>硬件工程师</td>
-                        <td>硬件研发部</td>
-                        <td>2</td>
-                        <td>2017.09.08</td>
-                    </tr>
-                    <tr>
-                        <td>Unity3D工程师</td>
-                        <td>研发部</td>
-                        <td>2</td>
-                        <td>2017.09.08</td>
-                    </tr>
-                    <tr>
-                        <td>数据库开发工程师</td>
-                        <td>研发部</td>
-                        <td>3</td>
-                        <td>2017.09.08</td>
-                    </tr>
-                    <tr>
-                        <td>实施工程师</td>
+                    <tr id="C#">
+                        <td>C#开发工程师</td>
                         <td>研发部</td>
                         <td>1</td>
                         <td>2017.09.08</td>
                     </tr>
-                    <tr>
+                    <tr id="U3D">
+                        <td>Unity3D开发初级工程师</td>
+                        <td>研发部</td>
+                        <td>2</td>
+                        <td>2017.09.08</td>
+                    </tr>
+                    <tr id="U3D2">
+                        <td>Unity3D开发中级工程师</td>
+                        <td>研发部</td>
+                        <td>若干</td>
+                        <td>2017.09.08</td>
+                    </tr>
+                    <tr id="U3D3">
+                        <td>Unity3D开发高级工程师</td>
+                        <td>研发部</td>
+                        <td>2</td>
+                        <td>2017.09.08</td>
+                    </tr>
+                    <tr id="RequirementAnalysis">
                         <td>需求分析师</td>
                         <td>研发部</td>
                         <td>2</td>
                         <td>2017.09.08</td>
                     </tr>
-                    <tr>
-                        <td>IT工程师</td>
+                    <tr id="Java">
+                        <td>JAVA开发工程师</td>
+                        <td>研发部</td>
+                        <td>若干</td>
+                        <td>2017.09.08</td>
+                    </tr>
+                    <tr id="FrontEnd">
+                        <td>前端开发工程师</td>
                         <td>研发部</td>
                         <td>1</td>
                         <td>2017.09.08</td>
                     </tr>
-                    <tr>
-                        <td>测试工程师(性能方向)</td>
+                    <tr id="Test">
+                        <td>软件测试工程</td>
                         <td>研发部</td>
                         <td>2</td>
                         <td>2017.09.08</td>
                     </tr>
-                    <tr>
-                        <td>3D美术师</td>
+                    <tr id="DBA">
+                        <td>DBA</td>
                         <td>研发部</td>
-                        <td>3</td>
+                        <td>2</td>
+                        <td>2017.09.08</td>
+                    </tr>
+                    <tr id="UI">
+                        <td>UI工程师</td>
+                        <td>硬件研发部</td>
+                        <td>2</td>
+                        <td>2017.09.08</td>
+                    </tr>
+
+                    <tr id="SaleManager">
+                        <td>销售代表/客户经理</td>
+                        <td>研发部</td>
+                        <td>2</td>
+                        <td>2017.09.08</td>
+                    </tr>
+                    <tr id="CopyWriter">
+                        <td>文案策划</td>
+                        <td>研发部</td>
+                        <td>1</td>
                         <td>2017.09.08</td>
                     </tr>
                 </table>
 
                 <!-- 分页 -->
-                <nav class="t-c">
+                <!--<nav class="t-c">
                     <ul class="pagination qs-pagination">
                         <li><a href="#">首页</a></li>
                         <li><a href="#">1</a></li>
                         <li><a href="#">尾页</a></li>
                     </ul>
-                </nav>
+                </nav>-->
 
             </div>
         </div>
@@ -184,12 +203,9 @@
     <script src="../scripts/plugins/bootstrap.min.js"></script>
     <script>
         $(function () {
-            $('.qs-talent-border tr').on('click',function () {
-
-                var talent = $(this).find("td:first-child").text()
-                console.log(talent);
-
-                window.location.href = './talent-detail.html?talent = ' + talent;
+            $('.qs-talent-border tr').on('click', function () {
+                var talent = $(this)[0].id;
+                window.location.href = './talent-detail.html?talent=' + talent;
             });
         })
     </script>

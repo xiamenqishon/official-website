@@ -37,7 +37,7 @@
                     <li><a href="./product.html">产品</a></li>
                     <li><a href="./customization.html">SaaS定制平台</a></li>
                     <li><a href="./fabric.html">SaaS面料平台</a></li>
-                    <li><a href="./case.html" class="nav--active">客户案例</a></li>
+                    <li><a href="./case.html">客户案例</a></li>
                     <li><a href="./consulting.html">活动资讯</a></li>
                 </ul>
             </div>
@@ -49,15 +49,15 @@
     <!-- content -->
     <div class="container">
         <div class="qs-talent-detail">
-            <h4 class="qs-talent-title">测试工程师(性能方向)</h4>
+            <h4 class="qs-talent-title" id="title"></h4>
 
             <div class="row detail-label">
-                <div class="col-lg-4 col-md-4 col-sm-3 col-xs-6">职位部门：<span>研发部</span></div>
-                <div class="col-lg-4 col-md-4 col-sm-3 col-xs-6">招聘人数：<span>1</span></div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">有效时间：<span>2017.09.08-2017.11.08</span></div>
+                <div class="col-lg-4 col-md-4 col-sm-3 col-xs-6">职位部门：<span id="department">研发部</span></div>
+                <div class="col-lg-4 col-md-4 col-sm-3 col-xs-6">招聘人数：<span id="num">1</span></div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">有效时间：<span id="activeTime">2017.09.08-2017.11.08</span></div>
             </div>
 
-            <div class="detail-padding detail-post">
+            <div class="detail-padding detail-post" id="jobDesc">
                 <p>岗位职责：</p>
                 <p>1、性能测试需求调研、方案编写、环境搭建；</p>
                 <p>2、性能测试数据准备、执行性能测试；</p>
@@ -66,7 +66,7 @@
                 <p>5、负责对公司产品性能测试技术预研，公关，培训。</p>
             </div>
 
-            <div class="detail-padding detail-ask">
+            <div class="detail-padding detail-ask" id="jobRequire">
                 <p>任职要求：</p>
                 <p>1、专科以上学历，计算机或相关专业毕业；</p>
                 <p>2、二年以上软件行业测试或开发工作经验；</p>
@@ -76,7 +76,7 @@
                 <p>6、熟悉一种以上的测试管理工具，如QC/禅道等；性能测试工具LR、分析工具等。</p>
             </div>
 
-            <div class="detail-padding detail-contact">
+            <div class="detail-padding detail-contact" id="hrInfo">
                 <p>联系人：徐燕</p>
                 <p>联系QQ：327764618</p>
                 <p>邮箱：qshr@qishon.com</p>
@@ -137,7 +137,37 @@
     <script src="../scripts/plugins/swiper-3.4.2.jquery.min.js"></script>
     <script>
         $(function () {
-
+            var _id = window.location.search.split("=")[1];
+            $.ajax({
+                url: "../data/talent.json",
+                success: function (data) {
+                    var obj = data.talentContent[_id];
+                    var hrData = data.hrInfo;
+                    var hrStr = "";
+                    $.each(obj, function (key, value) {
+                        if(typeof value === "object") {
+                            var objStr = "";
+                            if(key == "jobDesc") {
+                                objStr = "<p>岗位职责：</p>"
+                            }
+                            if(key == "jobRequire") {
+                                objStr = "<p>任职要求：</p>"
+                            }
+                            $.each(value, function (item) {
+                                objStr += "<p>" + value[item].desc + "</p>";
+                            })
+                            $("#"+key).empty().append(objStr);
+                        } else {
+                            $("#"+key).text(value);
+                        }
+                    })
+                    hrStr += "<p>联系人：" + hrData["userName"] + "</p>";
+                    hrStr += "<p>联系QQ：" + hrData["telPhone"] + "</p>";
+                    hrStr += "<p>邮箱：" + hrData["address"] + "</p>";
+                    hrStr += "<p>地址：" + hrData["email"] + "</p>";
+                    $("#hrInfo").empty().append(hrStr);
+                }
+            })
         })
     </script>
 </body>
