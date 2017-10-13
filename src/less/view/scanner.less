@@ -1,0 +1,219 @@
+.qs-scanner{
+  @qs-bg-gray:#fafafa;
+
+  .row{
+    margin: 0;
+    .qs-scanner-row-header{
+      h3{
+        margin: 3% 0;
+      }
+      .qs-scanner-img{
+        //width: 75%;
+      }
+      .qs-scanner-btn{
+        margin: 5% 0;
+        text-align: center;
+        .qs-scanner-down{
+          padding: 0.8rem 1rem;
+          background-color: #0daeff;
+          color: white;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+    .p-blue{
+      color: #0daeff;
+      font-weight: bold;
+    }
+    .img-100{
+      width: 80%;
+      margin-bottom: 5%;
+    }
+    .qs-scanner-img-p{
+      padding: 5% 0;
+      border-bottom: 1px solid #e1e1e1;
+      img{
+        width: 80%;
+      }
+      .qs-scanner-p{
+        text-align: left;
+        h3{
+          color: #0daeff;
+          font-weight: bold;
+        }
+        //p{
+        //  padding-left: 13px;
+        //  background: url('../images/scanner/scanner14.png') no-repeat;
+        //}
+      }
+    }
+    .qs-scanner-img-p:last-child{
+      border: none;
+    }
+  }
+  .qs-bg-gray{
+    background-color: @qs-bg-gray;
+    padding: 2% 0;
+    h3{
+      margin: 2% 0;
+    }
+    .qs-bg-gray-img{
+      width: 35%;
+      margin: 5% 0;
+    }
+    .qs-scanner-p{
+      text-align: left;
+      text-indent: 2em;
+      font-size: 16px;
+      line-height: 32px;
+    }
+    .qs-scanner-30{
+      img{
+        width: 30%;
+      }
+    }
+  }
+  .qs-bg-white{
+    h3{
+      margin: 5% 0;
+    }
+    p{
+      font-size: 16px;
+      line-height: 32px;
+    }
+    .qs-scanner-img-lr{
+      padding-bottom: 3rem;
+      border-bottom: 1px solid #e1e1e1;
+      .qs-scanner-img-left{
+        width: 20%;
+      }
+      .qs-scanner-img-right{
+        margin-left: 8%;
+        width: 35%;
+
+      }
+    }
+
+  }
+  .qs-scanner-footer{
+    .qs-scanner-p{
+      p{
+        text-align: left;
+      }
+      p:first-child{
+
+      }
+      p:last-child{
+        color: #0daeff;
+      }
+    }
+  }
+  .qs-footer-table{
+    border: none;
+    table, tr, td{
+      border: none;
+      text-align: left;
+    }
+    tr:nth-child(odd){
+      font-weight: bold;
+    }
+    tr:nth-child(even){
+      color: #0daeff;
+    }
+  }
+
+
+}
+
+
+
+/*媒体查询*/
+/*当页面大于1200px时，大屏幕，主要是pc端*/
+@media (min-width: 1200px) {
+  .qs-scanner{
+    .row{
+      .qs-scanner-row-header{
+        .qs-scanner-img{
+          width: 75%;
+        }
+      }
+    }
+  }
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的pc*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .qs-scanner{
+    .row{
+      .qs-scanner-row-header{
+        .qs-scanner-img{
+          width: 75%;
+        }
+      }
+    }
+  }
+}
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width: 768px) and (max-width: 991px){
+  .qs-scanner{
+    .row{
+      .qs-scanner-row-header{
+        .qs-scanner-img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+/*在480和767像素之间的屏幕里，超小屏幕，主要用于手机*/
+@media (min-width: 480px) and (max-width: 767px) {
+  .qs-scanner{
+    .row{
+      .qs-scanner-row-header{
+        .qs-scanner-img{
+          width: 100%;
+        }
+      }
+      .qs-scanner-img-p{
+        .qs-scanner-p{
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+/*在小于480像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width: 479px) {
+  .qs-scanner{
+    .qs-bg-gray{
+      .qs-bg-gray-img {
+        width: 100%;
+      }
+    }
+    .qs-bg-white {
+      .qs-scanner-img-lr {
+        .qs-scanner-img-left{
+          width: 40%;
+        }
+        .qs-scanner-img-right{
+          width: 50%;
+        }
+      }
+    }
+    .qs-scanner-row-header{
+      .qs-scanner-img{
+        width: 100%;
+      }
+    }
+    .row{
+      .qs-scanner-img-p{
+        .qs-scanner-p{
+          text-align: center;
+        }
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
