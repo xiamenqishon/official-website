@@ -44,7 +44,9 @@ gulp.task('browserSync', function() {
     browserSync({
         server: {
             baseDir: [config.root]
-        }
+        },
+        //在Chrome浏览器中打开网站
+        browser: "chrome"
     })
 });
 
