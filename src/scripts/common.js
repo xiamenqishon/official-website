@@ -123,4 +123,4 @@ function positioning(x, y) {
  */
 $('.qs-scanner-down').on('click',function () {
     window.location.href = "http://www.qishon.com/images/F3M3D_2.0_full.exe";
-})
+});
