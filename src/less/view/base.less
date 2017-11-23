@@ -15,4 +15,33 @@ body{
   .container {
     width: 1180px;
   }
+  .containerResolve {
+    width: 1260px;
+    padding: 0 40px;
+    position: relative;
+    .row{
+      width: 1180px;
+      margin:0;
+      .swiper-container{
+        position: static;
+        .swiper-button-prev{
+          top:50%;
+          background-image:url(../images/left-swiper-button.png);
+          background-size: 12px auto;
+          left: 10px;
+          right: auto;
+          width: 18px;
+          height: 34px;
+        }
+      }
+      .swiper-button-next{
+        top:50%;
+        background-image:url(../images/right-swiper-button.png);
+        background-size: 12px auto;
+        left: auto;
+        right: 10px;
+        width: 18px;
+        height: 34px;}
+    }
+  }
 }
