@@ -1,24 +1,14 @@
-/**
- * description：
- * author：洪俊勇
- * createTime：2017/9/6
- * version:1.0.0.0
- * history:
- *   1、
- *   2、
- */
-// $(function () {
-//     to_customization();
-// });
-/**
- * 进入文档中心
- */
-// function to_customization() {
-//     var request = getRequest(),
-//         tag = request['tag'];
-//     if(tag == 1){//tag为1：从【SaaS定制平台】进入【SaaS面料平台】
-//         $('.my-tab').parent().find('.active').removeClass();
-//         $('.my-tab').find('a').eq(1).addClass('active');
-//         $('.my-tab').find('a').eq(1).click();
-//     }
-// }
+/*
+* zhibin.zhao
+* 2017.11.23
+* */
+$(function () {
+    $(".my-tab2 a, .nav-tab-span").off("click").on("click", function () {
+        if($(this).hasClass("active")) return;
+        $active = $(this).siblings(".active");
+        $active.removeClass("active");
+        $("#"+$active.attr("name")).removeClass("active");
+        $(this).addClass("active");
+        $("#"+$(this).attr("name")).addClass("active");
+    })
+})

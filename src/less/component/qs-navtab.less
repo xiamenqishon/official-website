@@ -6,7 +6,7 @@
 *************************************/
 .my-tab{
 
-  @myTab-TxtColor:#00a0e9;
+  @myTab-TxtColor:#38adff;
 
   padding:1.8rem 0 2.5rem;
   text-align: center;
@@ -16,8 +16,9 @@
     color: #3C3F41;
     font-weight:300;
     padding: 1.25rem 5rem;
+    cursor: pointer;
     &.active{
-      background-color: #f8f8f8;
+      background-color: #fafafa;
       color: @myTab-TxtColor;
     }
   }
@@ -36,6 +37,6 @@
 /*在小于480像素的屏幕，微小屏幕，更低分辨率的手机*/
 @media (max-width: 479px) {
   .my-tab a{
-    padding: 10px 15px;
+    padding: 10px 5px;
   }
 }

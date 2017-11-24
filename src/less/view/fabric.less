@@ -1,9 +1,9 @@
 .fabric{
   @customization-fa:#fafafa;
-  @customization-gray:#dddddd;
-  @customization-gray2:#999999;
+  @customization-gray:#eeeeee;
+  @customization-gray2:#a9b0b4;
   @customization-gray3:#333333;
-  @customization-blue:#33b3ed;
+  @customization-blue:#38ADFF;
 
   /* 图片轮播 */
   .swiper-container{
@@ -41,79 +41,40 @@
       }
     }
   }
-  .none-px{
-    padding: 0 0 5% 0;
-    margin: 0;
+  .fabric-tab{
+    width: 100%;
     background-color: @customization-fa;
-    .tab-pane{
-      h4{
-        padding: 3.5rem 0;
-      }
-    }
+    padding-bottom: 5rem;
     .cus-h3{
       font-weight: 400;
       background-color: @customization-fa;
-      margin: 2% 0;
+      color: #323334;
+      font-size: 2.5rem;
+      margin: 5rem 0 3.33rem;
     }
-    .border{
-      border: 1px solid @customization-gray;
-      background-color: white;
-      .my-tab-span{
-        text-align: center;
-        margin: 5% 0;
-        a{
-          padding: 0 2%;
-          font-size: 1.4rem;
-          color: @customization-gray2;
-          &.active{
-            color: black;
-          }
+    .none-px{
+      background-color: #ffffff;
+      .tab-pane{
+        h4{
+          padding: 3.5rem 0;
         }
       }
       .my-tab2{
         padding: 0;
         margin: 0;
         a{
-          font-size: 1.5rem;
-          .nav-tab-child{
-            padding: 2rem 2rem;
-            background-color: @customization-gray;
-            text-align: center;
-            //position: relative;
-            //&:after{
-            //  content:'';
-            //  display:inline-block;
-            //  width:1px;
-            //  height:5rem;
-            //  background-color: #fff;
-            //  position: absolute;
-            //  right:0;
-            //  top:2rem;
-            //}
-            img{
-              height: 5rem;
-              width: 5rem;
-            }
-            span{
-
-            }
-            &#active{
-              background-color: white;
-            }
-
+          font-size: 1.67rem;
+          color: #323334;
+          cursor: pointer;
+          padding: 2.75rem 2rem;
+          background-color: @customization-gray;
+          text-align: center;
+          img{
+            height: 7.5rem;
+            width: 7.5rem;
           }
-          .fabric-after-solid{
-            position: relative;
-            &:after{
-              content:'';
-              display:inline-block;
-              width:1px;
-              height:5rem;
-              background-color: #fff;
-              position: absolute;
-              right:0;
-              top:2rem;
-            }
+          &.active{
+            background-color: white;
           }
           .about-after-solid{
             position: relative;
@@ -139,43 +100,79 @@
 
           }
         }
-      }
-      .cus-p{
-        margin: 3% 0;
-        font-size: 1.4rem;
-        span{
-          color: @customization-gray2;
+        .fabric-after-solid{
+          position: relative;
+          &:after{
+            content:'';
+            display:inline-block;
+            width:1px;
+            height:8.25rem;
+            background-color: #fff;
+            position: absolute;
+            right:0;
+            top:2rem;
+          }
         }
       }
-      .get{
-        padding: 0 10%;
-        .cus{
-          border: none;
-          .icon{
-            text-align: center;
-            i{
-              font-size: 3.5rem;
+      .my-tab-span{
+        text-align: center;
+        margin: 2.6rem 0 5.5rem;
+        a{
+          padding: 0 2%;
+          font-size: 1.17rem;
+          color: @customization-gray2;
+          cursor: pointer;
+          &.active{
+            color: #757c82;
+          }
+        }
+      }
+      .tab-content{
+        .tab-pane{
+          .tab-pane-child{
+            display: none;
+            &.active{
+              display: block;
             }
           }
-          .cus-title{
-            font-weight: 300;
-            padding: 5% 0;
-            font-size: 1.4rem;
-            height: 3rem;
+          display: none;
+          .get{
+            margin: 0;
+            padding: 0 3.33rem;
+            .cus{
+              border: none;
+              .icon{
+                text-align: center;
+                i{
+                  font-size: 3.5rem;
+                  color: #a9b0b4;
+                }
+              }
+              .cus-title{
+                font-weight: 300;
+                padding: 5% 0;
+                font-size: 1.4rem;
+                height: 3rem;
+              }
+              .cus-detail{
+                font-weight: 300;
+                color: @customization-gray2;
+                height: 3rem;
+                text-align: center;
+                font-size: 1.17rem;
+              }
+            }
           }
-          .cus-detail{
-            font-weight: 300;
-            color: @customization-gray2;
-            height: 3rem;
-            text-align: center;
+          &.active{
+            display: block;
           }
         }
       }
-    }
     .cus-enter{
       font-weight: 300;
       color: @customization-blue;
       cursor: pointer;
+      margin-top: 5rem;
       margin-bottom: 5%;
       span{
         position: relative;
@@ -186,6 +183,54 @@
         border-top: 5px solid transparent;
         border-bottom: 5px solid transparent;
         border-left: 8px solid @customization-blue;
+      }
+    }
+  }
+  }
+  .qs-data{
+    width: 100%;
+    background-color: #ffffff;
+    padding-bottom: 4.8rem;
+    h3{
+      font-weight: 400;
+      text-align: center;
+      font-size: 3.33rem;
+      padding-top: 3rem;
+      color: #333;
+      padding-bottom: 2.5rem;
+    }
+    .qs-data-save{
+      .data-content{
+        .data-save-left{
+          padding-left: 0;
+        }
+        .data-save-right{
+          padding-right: 0;
+        }
+        .thumbnail{
+          background-color: @customization-fa;
+          height: 40.833rem;
+          border-radius: 0;
+          border-top: 2px solid @customization-blue;
+          position: relative;
+          .caption-title{
+            font-size: 2.33rem;
+            color: @customization-blue;
+            text-align: center;
+            padding:2.25rem 0 0;
+          }
+          .caption-detail{
+            text-indent:2em;
+            font-weight: 300;
+            font-size: 1.1rem;
+            line-height: 2rem;
+            height: 15.5rem;
+            padding: 0 3.083rem;
+          }
+          .caption-div-img{
+            text-align: center;
+          }
+        }
       }
     }
   }
@@ -271,5 +316,10 @@
       margin-left: 0;
       font-size: 1.5rem;
     }
+  }
+}
+@media (min-width: 1180px){
+  .none-px, .qs-data-save{
+    margin: 0 6.2rem;
   }
 }
