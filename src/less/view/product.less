@@ -1,7 +1,7 @@
 .product{
 
   @product-p:#191f25;
-  @product-tab1:#eee;
+  @product-tab1:#fafafa;
 
   margin-top: 1rem;
   .tab-common{
@@ -11,7 +11,6 @@
       .text {
         h3{
           font-weight: 400;
-          font-size: 3.33rem;
         }
         p{
           font-weight: 300;
@@ -43,7 +42,145 @@
 
 /*媒体查询*/
 /*当页面大于1200px时，大屏幕，主要是pc端*/
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
+  .tab1-text{
+    float: left;
+  }
+  .tab1-img{
+    float: right;
+  }
+  .product{
+    .tab-common{
+      .text{
+        h3{
+          font-size: 3.33rem;
+        }
+      }
+      height: 50rem;
+      .text-cls{
+        margin: 11.8rem 0 0 4rem;
+      }
+      .text-left{
+        margin: 11.8rem 0 0 7rem;
+      }
+      .img-cls{
+        img{
+          margin: 3.4rem 0 0 8.5rem;
+        }
+      }
+      .img-left{
+        img{
+          margin: 8rem 0 0 4rem;
+        }
+        .back-img{
+          width: 41.33rem;
+          height: 27.92rem;
+          margin: 8rem 0 0 4rem;
+          background: url("../images/product/product-new-2.png") no-repeat;
+          video{
+            margin-top: 1.38rem;
+          }
+        }
+      }
+      .img-news-4{
+        img{
+          margin: 3.4rem 0 0 4rem;
+        }
+      }
+      .img-right{
+        img{
+          margin: 8rem 0 0 8.5rem;
+        }
+        .search-material{
+          margin: 8rem 0 0 8.5rem;
+          width: 41.75rem;
+          height: 28.5rem;
+          background: url("../images/product/product-new-3.png") no-repeat;
+          video{
+            width: 33.34rem;
+            height: 25rem;
+            margin: 1.6rem .8rem 0 0;
+          }
+        }
+      }
+    }
+  }
+  .text-left-center{
+    text-align: left;
+  }
+}
+/*在992和1024像素之间的屏幕里，中等屏幕，分辨率低的pc*/
+@media/* (min-width: 766px) and */(max-width: 1024px) {
+  .tab1-text{
+    float: left;
+  }
+  .tab1-img{
+    float: right;
+  }
+  .product{
+    .tab-common{
+      .text{
+        h3{
+          font-size: 3rem;
+        }
+      }
+      height: 35rem;
+      .text-cls{
+        //margin: 0rem 0 0 4rem;
+      }
+      .text-left{
+        margin: 6rem 0 0 0rem;
+      }
+      .img-cls{
+        img{
+          //margin: 3.4rem 0 0 8.5rem;
+        }
+      }
+      .img-left{
+        img{
+          width: 22.5rem;
+          //margin: 8rem 0 0 4rem;
+        }
+        .back-img{
+          width: 100%;
+          height: 27.92rem;
+          margin: 4rem 0 0 0rem;
+          background: url("../images/product/product-new-2.png") no-repeat;
+          background-size: 100%;
+          video{
+            margin-top: 1.38rem;
+          }
+        }
+      }
+      .img-news-4{
+        img{
+          //margin: 3.4rem 0 0 4rem;
+        }
+      }
+      .img-right{
+        img{
+          //margin: 8rem 0 0 8.5rem;
+        }
+        .search-material{
+          //margin: 8rem 0 0 8.5rem;
+          //width: 41.75rem;
+          //height: 28.5rem;
+          //background: url("../images/product/product-new-3.png") no-repeat;
+          video{
+            //width: 33.34rem;
+            //height: 25rem;
+            //margin: 1.6rem .8rem 0 0;
+          }
+        }
+      }
+    }
+  }
+  .text-left-center{
+    text-align: left;
+  }
+}
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+/*@media (min-width: 768px) and (max-width: 1199px){
   .tab1-text{
     float: left;
   }
@@ -68,6 +205,15 @@
         img{
           margin: 8rem 0 0 4rem;
         }
+        .back-img{
+          width: 41.33rem;
+          height: 27.92rem;
+          margin: 8rem 0 0 4rem;
+          background: url("../images/product/product-new-2.png") no-repeat;
+          video{
+            margin-top: 1.38rem;
+          }
+        }
       }
       .img-news-4{
         img{
@@ -78,47 +224,24 @@
         img{
           margin: 8rem 0 0 8.5rem;
         }
+        .search-material{
+          margin: 8rem 0 0 8.5rem;
+          width: 41.75rem;
+          height: 28.5rem;
+          background: url("../images/product/product-new-3.png") no-repeat;
+          video{
+            width: 33.34rem;
+            height: 25rem;
+            margin: 1.6rem .8rem 0 0;
+          }
+        }
       }
     }
   }
   .text-left-center{
     text-align: left;
   }
-}
-/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的pc*/
-@media (min-width: 992px) and (max-width: 1199px) {
-  .tab1-text{
-    float: left;
-  }
-  .tab1-img{
-    float: right;
-  }
-  .product{
-    .tab-common{
-      height: 27rem;
-    }
-  }
-  .text-left-center{
-    text-align: left;
-  }
-}
-/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
-@media (min-width: 768px) and (max-width: 991px){
-  .tab1-text{
-    float: left;
-  }
-  .tab1-img{
-    float: right;
-  }
-  .product{
-    .tab-common{
-      height: 27rem;
-    }
-  }
-  .text-left-center{
-    text-align: left;
-  }
-}
+}*/
 /*在480和767像素之间的屏幕里，超小屏幕，主要用于手机*/
 @media (min-width: 480px) and (max-width: 767px) {
   .product{
