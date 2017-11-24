@@ -1,6 +1,6 @@
 .product{
 
-  @product-p:#777;
+  @product-p:#191f25;
   @product-tab1:#eee;
 
   margin-top: 1rem;
@@ -8,25 +8,29 @@
     padding: 3rem 0;
     text-align: center;
     .container{
-      //margin-top: 2rem;
-      img{
-        height: 20rem;
-      }
       .text {
         h3{
           font-weight: 400;
-          font-size: 2.3rem;
-          margin-bottom: 20px;
+          font-size: 3.33rem;
         }
         p{
           font-weight: 300;
-          font-size: 1.2rem;
-          color: @product-p;
-          margin-bottom:14px;
+          font-size: 1.5rem;
+          color: #999999;
+          margin: 2.5rem 0;
+          line-height:3rem;
         }
-      }
-      .mt-3{
-        margin-top: -3rem;
+        .product-detail-btn{
+          //display: block;
+          border: 1px solid #38ADFF;
+          color: #38ADFF;
+          border-radius: 0.3rem;
+          padding: 0.8rem 1.2rem;
+          &:hover{
+            background-color: @customization-blue;
+            color: white;
+          }
+        }
       }
     }
 
@@ -48,7 +52,33 @@
   }
   .product{
     .tab-common{
-      height: 27rem;
+      height: 50rem;
+      .text-cls{
+        margin: 11.8rem 0 0 4rem;
+      }
+      .text-left{
+        margin: 11.8rem 0 0 7rem;
+      }
+      .img-cls{
+        img{
+          margin: 3.4rem 0 0 8.5rem;
+        }
+      }
+      .img-left{
+        img{
+          margin: 8rem 0 0 4rem;
+        }
+      }
+      .img-news-4{
+        img{
+          margin: 3.4rem 0 0 4rem;
+        }
+      }
+      .img-right{
+        img{
+          margin: 8rem 0 0 8.5rem;
+        }
+      }
     }
   }
   .text-left-center{
