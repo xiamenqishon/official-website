@@ -63,9 +63,34 @@
       .text-left{
         margin: 11.8rem 0 0 7rem;
       }
+      .text-right{
+        margin: 11.8rem 0 0 12rem;
+      }
       .img-cls{
         img{
           margin: 3.4rem 0 0 8.5rem;
+        }
+        .custom-back{
+          width: 27.92rem;
+          height: 41.33rem;
+          margin: 3.4rem 0 0 8.5rem;
+          background: url("../images/product/product-new-6.png") no-repeat;
+          video{
+            width: 25rem;
+            height: 33.34rem;
+            margin: 3.9rem .1rem 0 0;
+          }
+        }
+        .custom-back2{
+          width: 27.92rem;
+          height: 41.33rem;
+          margin: 3.4rem 0 0 8.5rem;
+          background: url("../images/product/product-new-7.png") no-repeat;
+          video{
+            width: 25rem;
+            height: 33.34rem;
+            margin: 3.9rem .1rem 0 0;
+          }
         }
       }
       .img-left{
@@ -79,6 +104,16 @@
           background: url("../images/product/product-new-2.png") no-repeat;
           video{
             margin-top: 1.38rem;
+          }
+        }
+        .retail-img2{
+          width: 50.8rem;
+          height: 41.7rem;
+          background: url("../images/product/product-new-11.png") no-repeat;
+          img{
+            width: 48rem;
+            margin: 1.9rem .3rem 0 0;
+            //height:;
           }
         }
       }
@@ -102,6 +137,17 @@
             margin: 1.6rem .8rem 0 0;
           }
         }
+        .retail-img{
+          width: 50.8rem;
+          height: 41.7rem;
+          //margin: 0 0 0 8.5rem;
+          background: url("../images/product/product-new-10.png") no-repeat;
+          video{
+            width: 47.5rem;
+            margin: 1.5rem 0 0 0;
+            //height:;
+          }
+        }
       }
     }
   }
@@ -110,7 +156,7 @@
   }
 }
 /*在992和1024像素之间的屏幕里，中等屏幕，分辨率低的pc*/
-@media/* (min-width: 766px) and */(max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .tab1-text{
     float: left;
   }
@@ -126,7 +172,7 @@
       }
       height: 35rem;
       .text-cls{
-        //margin: 0rem 0 0 4rem;
+        margin: 6rem 0 0 0;
       }
       .text-left{
         margin: 6rem 0 0 0rem;
@@ -134,6 +180,30 @@
       .img-cls{
         img{
           //margin: 3.4rem 0 0 8.5rem;
+        }
+        .custom-back{
+          width: 21rem;
+          height: 31.33rem;
+          //margin: 0 0 0 4rem;
+          background: url("../images/product/product-new-6.png") no-repeat;
+          background-size: 100%;
+          video{
+            width: 19rem;
+            height: 26rem;
+            margin: 2rem .1rem 0 0;
+          }
+        }
+        .custom-back2{
+          width: 21rem;
+          height: 31.33rem;
+          margin: 0 0 0 6rem;
+          background: url("../images/product/product-new-7.png") no-repeat;
+          background-size: 100%;
+          video{
+            width: 19rem;
+            height: 26rem;
+            margin: 2rem .1rem 0 0;
+          }
         }
       }
       .img-left{
@@ -148,7 +218,19 @@
           background: url("../images/product/product-new-2.png") no-repeat;
           background-size: 100%;
           video{
-            margin-top: 1.38rem;
+            width: 23rem;
+            margin-top: 1rem;
+          }
+        }
+        .retail-img2{
+          width: 29.8rem;
+          height: 29.7rem;
+          background: url("../images/product/product-new-11.png") no-repeat;
+          background-size: 100%;
+          img{
+            width: 27.5rem;
+            margin: 1.1rem .1rem 0 0;
+            //height:;
           }
         }
       }
@@ -162,14 +244,26 @@
           //margin: 8rem 0 0 8.5rem;
         }
         .search-material{
-          //margin: 8rem 0 0 8.5rem;
-          //width: 41.75rem;
-          //height: 28.5rem;
-          //background: url("../images/product/product-new-3.png") no-repeat;
+          width: 100%;
+          height: 27.92rem;
+          margin-top: 5rem;
+          background: url("../images/product/product-new-3.png") no-repeat;
+          background-size: 100%;
           video{
-            //width: 33.34rem;
-            //height: 25rem;
-            //margin: 1.6rem .8rem 0 0;
+            width: 23.5rem;
+            margin-top: 1.1rem;
+          }
+        }
+        .retail-img{
+          width: 30rem;
+          height: 30.7rem;
+          margin: 4rem 0 0 0;
+          background: url("../images/product/product-new-10.png") no-repeat;
+          background-size: 100%;
+          video{
+            width: 28.5rem;
+            margin: 1rem 0 0 0;
+            //height:;
           }
         }
       }
@@ -179,91 +273,110 @@
     text-align: left;
   }
 }
-/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
-/*@media (min-width: 768px) and (max-width: 1199px){
-  .tab1-text{
-    float: left;
-  }
-  .tab1-img{
-    float: right;
+/*在小于480像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width: 767px) {
+  .navbar-right{
+    margin-right: 0 !important;
   }
   .product{
     .tab-common{
-      height: 50rem;
+      height: 45rem;
       .text-cls{
-        margin: 11.8rem 0 0 4rem;
+        //margin: 11.8rem 0 0 4rem;
       }
       .text-left{
-        margin: 11.8rem 0 0 7rem;
+        //margin: 11.8rem 0 0 7rem;
       }
       .img-cls{
         img{
-          margin: 3.4rem 0 0 8.5rem;
+          margin: 2rem 0 0 6rem;
+        }
+        .custom-back{
+          width: 14rem;
+          height: 21.33rem;
+          margin: 0 auto;
+          background: url("../images/product/product-new-6.png") no-repeat;
+          background-size: 100%;
+          video{
+            width: 12.5rem;
+            height: 19rem;
+          }
+        }
+        .custom-back2{
+          width: 14rem;
+          height: 21.33rem;
+          margin: 0 auto;
+          background: url("../images/product/product-new-7.png") no-repeat;
+          background-size: 100%;
+          video{
+            width: 12.5rem;
+            height: 19rem;
+          }
         }
       }
       .img-left{
         img{
-          margin: 8rem 0 0 4rem;
+          //margin: 8rem 0 0 4rem;
         }
         .back-img{
-          width: 41.33rem;
-          height: 27.92rem;
-          margin: 8rem 0 0 4rem;
+          width: 24rem;
+          height: 24rem;
+          margin:0 auto;
           background: url("../images/product/product-new-2.png") no-repeat;
+          background-size: 100%;
           video{
-            margin-top: 1.38rem;
+            width: 19.5rem;
+            margin-top: .7rem;
+          }
+        }
+        .retail-img2{
+          width: 25rem;
+          height: 21rem;
+          margin: 0 auto;
+          background: url("../images/product/product-new-11.png") no-repeat;
+          background-size: 100%;
+          img{
+            width: 23.5rem;
+            margin: .7rem 0 0 0;
+            //height:;
           }
         }
       }
       .img-news-4{
         img{
-          margin: 3.4rem 0 0 4rem;
+          //margin: 3.4rem 0 0 4rem;
         }
       }
       .img-right{
         img{
-          margin: 8rem 0 0 8.5rem;
+          width: 30rem;
+          //margin: 8rem 0 0 8.5rem;
         }
         .search-material{
-          margin: 8rem 0 0 8.5rem;
-          width: 41.75rem;
-          height: 28.5rem;
+          width: 24rem;
+          height: 24rem;
+          margin:0 auto;
           background: url("../images/product/product-new-3.png") no-repeat;
+          background-size: 100%;
           video{
-            width: 33.34rem;
-            height: 25rem;
-            margin: 1.6rem .8rem 0 0;
+            width: 19.5rem;
+            margin-top: .7rem;
+          }
+        }
+        .retail-img{
+          width: 25rem;
+          height: 21rem;
+          margin: 0 auto;
+          //margin: 4rem 0 0 0;
+          background: url("../images/product/product-new-10.png") no-repeat;
+          background-size: 100%;
+          video{
+            width: 23.5rem;
+            margin: .7rem 0 0 0;
+            //height:;
           }
         }
       }
-    }
-  }
-  .text-left-center{
-    text-align: left;
-  }
-}*/
-/*在480和767像素之间的屏幕里，超小屏幕，主要用于手机*/
-@media (min-width: 480px) and (max-width: 767px) {
-  .product{
-    .tab-common{
-      height: 45rem;
-    }
-    .tab-common-lastimg{
-      padding-top:8rem;
-    }
-  }
-  .text-left-center{
-    text-align: center;
-  }
-}
-/*在小于480像素的屏幕，微小屏幕，更低分辨率的手机*/
-@media (max-width: 479px) {
-  .product{
-    .tab-common{
-      height: 45rem;
-    }
-    .tab-common-lastimg{
-      padding-top:8rem;
     }
   }
   .text-left-center{
