@@ -15,94 +15,165 @@
       background: url('../images/customization/banner.png') no-repeat;
     }
   }
-
-
-  .none-px{
-    padding: 0 0 5% 0;
+  .header-button{
+    padding: 0;
     margin: 0;
+  }
+  .regist-login{
+    padding: 1.8rem 0 2.5rem;
+    a{
+      border: 1px solid @customization-blue;
+      color: @customization-blue;
+      border-radius: 0.3rem;
+      padding: 0.8rem 1.2rem;
+    }
+    a:hover{
+      background-color: @customization-blue;
+      color: white;
+    }
+  }
+  .cus-content{
+    width: 100%;
     background-color: @customization-fa;
+    padding-bottom: 5rem;
     .cus-h3{
       font-weight: 400;
       background-color: @customization-fa;
-      margin: 2% 0;
+      color: #323334;
+      font-size: 2.5rem;
+      margin: 3.33rem 0;
     }
-    .border{
-      border: 1px solid @customization-gray;
-      background-color: white;
-      .my-tab-span{
-        text-align: center;
-        margin: 5% 0;
-        a{
-          padding: 0 2%;
-          font-size: 1.4rem;
-          color: @customization-gray2;
-          &.active{
-            color: black;
-          }
+    .none-px{
+      background-color: #ffffff;
+      .tab-pane{
+        h4{
+          padding: 3.5rem 0;
         }
       }
       .my-tab2{
         padding: 0;
         margin: 0;
         a{
-          font-size: 1.5rem;
-          .nav-tab-child{
-            padding: 2rem 2rem;
-            span{
-              margin-left: 10%;
+          font-size: 1.67rem;
+          color: #323334;
+          cursor: pointer;
+          padding: 2.75rem 2rem;
+          background-color: @customization-gray;
+          text-align: center;
+          img{
+            height: 7.5rem;
+            width: 7.5rem;
+          }
+          &.active{
+            background-color: white;
+          }
+          .about-after-solid{
+            position: relative;
+            &:after{
+              content:'';
+              display: inline-block;
+              width: 1px;
+              height: 4rem;
+              background-color: #fff;
+              position: absolute;
+              right: 0;
+              top: 1rem;
             }
-            &#active{
-              background-color: @customization-gray;
+          }
+          &:last-child{
+            .nav-tab-child{
+              border-right: none;
+              &:after{
+                content:'';
+                display:none;
+              }
             }
+
+          }
+        }
+        .fabric-after-solid{
+          position: relative;
+          &:after{
+            content:'';
+            display:inline-block;
+            width:1px;
+            height:8.25rem;
+            background-color: #fff;
+            position: absolute;
+            right:0;
+            top:2rem;
           }
         }
       }
-      .cus-p{
-        margin: 3% 0;
-        font-size: 1.4rem;
-        span{
+      .my-tab-span{
+        text-align: center;
+        margin: 3.33rem 0 3rem;
+        a{
+          padding: 0 2%;
+          font-size: 1.17rem;
           color: @customization-gray2;
+          cursor: pointer;
+          &.active{
+            color: #757c82;
+          }
         }
       }
-      .get{
-        padding: 0 10%;
-        .cus{
-          border: none;
-          .icon{
-            text-align: center;
-            i{
-              font-size: 3.5rem;
+      .tab-content{
+        .tab-pane{
+          .tab-pane-child{
+            display: none;
+            &.active{
+              display: block;
             }
           }
-          .cus-title{
-            padding: 5% 0;
-            font-size: 1.4rem;
-            height: 3rem;
-            font-weight: 300;
+          display: none;
+          .get{
+            margin: 0;
+            padding: 0 3.33rem;
+            .cus{
+              border: none;
+              .icon{
+                text-align: center;
+                i{
+                  font-size: 3.5rem;
+                  color: #a9b0b4;
+                }
+              }
+              .cus-title{
+                font-weight: 300;
+                margin-top: .5rem;
+                font-size: 1.4rem;
+                height: 3rem;
+              }
+              .cus-detail{
+                font-weight: 300;
+                color: @customization-gray2;
+                height: 3rem;
+                text-align: center;
+                font-size: 1.17rem;
+              }
+            }
           }
-          .cus-detail{
-            color: @customization-gray2;
-            height: 3rem;
-            font-weight: 300;
-            text-align: center;
+          &.active{
+            display: block;
           }
         }
       }
-    }
-    .cus-enter{
-      font-weight: 300;
-      color: @customization-blue;
-      cursor: pointer;
-      margin-bottom: 5%;
-      span{
-        position: relative;
-        display:inline-block;
-        margin-left: 5px;
-        width: 0;
-        height: 0;
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
-        border-left: 8px solid @customization-blue;
+      .cus-enter{
+        font-weight: 300;
+        color: @customization-blue;
+        cursor: pointer;
+        margin: 3rem 0;
+        span{
+          position: relative;
+          display:inline-block;
+          margin-left: 5px;
+          width: 0;
+          height: 0;
+          border-top: 5px solid transparent;
+          border-bottom: 5px solid transparent;
+          border-left: 8px solid @customization-blue;
+        }
       }
     }
   }
@@ -187,9 +258,17 @@
   //.img-display{
   //  display: none;
   //}
-  .regist-login a {
-    padding: 0.3rem 0.9rem;
-    font-size: 0.8rem;
+  .my-tab a {
+    padding: 10px 1px !important;
+  }
+  .customization{
+    .regist-login {
+      padding-top: 2.5rem;
+      a{
+        font-size: 0.8rem;
+        padding: 0.3rem 0.9rem;
+      }
+    }
   }
   .square{
     img{
