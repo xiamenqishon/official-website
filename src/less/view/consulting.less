@@ -27,14 +27,33 @@ a, a:hover, a:link, a:visited, a:active{
   border: none;
 }
 
+.consulting-wrapper{
+  margin: 6.3rem 0 2rem 0;
+  .container{
+    .row{
+      > div{
+        padding: 0 0.8rem;
+        margin-bottom:1.5rem;
+        .qs-card__contentTxt__panel{
+          h4{
+            height: 4.5rem;
+            line-height: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
 // 分页
 .page-custom{
   text-align: center;
-  margin-bottom: 5%;
+  font-size: 1.1666rem;
+  margin-bottom: 5rem;
   ul{
     li{
       display: inline-block;
-      margin: 3px;
+      margin: 0 0.5rem;
       cursor: pointer;
       a{
         color: black;
@@ -44,36 +63,14 @@ a, a:hover, a:link, a:visited, a:active{
           border: none;
         }
         &.active{
-          padding: 3px 7px;
+          padding: 1px 7px;
           border: 1px solid #dddddd;
-          color: #1db3ff;
+          color: #38adff;
           border-radius: 3px;
 
         }
       }
     }
 
-  }
-}
-
-.cont-padding{
-  padding: 0 10%;
-  h5, h4{
-    margin: 3% 0;
-  }
-  p{
-    font-size: 16px;
-    line-height: 26px;
-    padding: 0 5%;
-  }
-  .detail{
-    margin-top: 5%;
-    color: #1db3ff;
-    text-align: center;
-  }
-}
-.consulting-swiper{
-  .qs-swiper__title{
-    padding-top:4rem;
   }
 }

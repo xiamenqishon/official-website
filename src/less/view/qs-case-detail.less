@@ -40,16 +40,22 @@
         margin-top: @caseDetail__TR;
         thead{
             th{
-                padding-left:1rem;
+                padding-left:1.5rem;
                 font-size: 1.6rem;
                 font-weight:400;
+                &:nth-child(1), &:nth-child(2){
+                    width: 25%;
+                }
+                &:nth-child(3){
+                    width: 50%;
+                }
             }
         }
         tbody{
             tr{
                 height:10rem;
                 td{
-                    padding:1rem;
+                    padding:1rem 1.5rem;
                     font-size:1.33rem;
                     letter-spacing:1px;
                     font-weight:300;
