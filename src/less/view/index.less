@@ -5,16 +5,17 @@ body{
   @height45: 3.75rem;
   .index-swiper{
     .slide-one {
-      background: url("../images/banner2.jpg") no-repeat;
+      background: url("../images/banner2.jpg") no-repeat center 0;
     }
     .slide-two {
-      background: url("../images/banner1.png") no-repeat;
+      background: url("../images/banner1.jpg") no-repeat center 0;
     }
     .slide-three {
-      background: url("../images/banner3.jpg") no-repeat;
+      background: url("../images/banner3.jpg") no-repeat center 0;
     }
     @media (max-width: 768px){
       .slide-one {
+        background: url("../images/mobile-banner2.jpg") no-repeat center 0;
         .qs-swiper-img{
           width:11rem;
           padding:0;
@@ -26,6 +27,7 @@ body{
         }
       }
       .slide-two {
+        background: url("../images/mobile-banner1.jpg") no-repeat center 0;
         .qs-swiper-img{
           width:11rem;
           margin-top:7rem;
@@ -36,6 +38,7 @@ body{
         }
       }
       .slide-three {
+        background: url("../images/mobile-banner3.jpg") no-repeat center 0;
         .qs-swiper-img{
           width:11rem;
           margin-top:6rem;
@@ -177,10 +180,12 @@ body{
       background-color: #ffffff;
       text-align: center;
       //width: 295px;
-      height:221px;
+      //height:221px;
+      height: 20rem;
       overflow:hidden;
       border:1px solid #f1f1f1;
       margin-left: -1px;
+      padding-top: 1.7rem;
       &:hover{
         box-shadow: 0px 0px 4px 2px #eee;
       }
@@ -193,12 +198,20 @@ body{
       }
       .projectName{
         font-size: @font18;
-        line-height:3.5rem;
+        line-height:1rem;
         font-weight: 300;
       }
       .projectDesc{
         font-weight: 300;
         font-size: @font12;
+      }
+    }
+  }
+
+  @media(min-width: 768px){
+    .project{
+      .system{
+        height:221px;
       }
     }
   }
