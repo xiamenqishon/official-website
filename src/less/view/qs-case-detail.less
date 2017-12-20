@@ -38,17 +38,19 @@
 
     .caseDetail__content__table{
         margin-top: @caseDetail__TR;
+        border-bottom: 1px solid #ddd;
         thead{
             th{
                 padding-left:1.5rem;
                 font-size: 1.6rem;
                 font-weight:400;
-                &:nth-child(1), &:nth-child(2){
+                width: 33.33%;
+                /*&:nth-child(1), &:nth-child(2){
                     width: 25%;
                 }
                 &:nth-child(3){
                     width: 50%;
-                }
+                }*/
             }
         }
         tbody{
@@ -70,8 +72,15 @@
             width:100%;
         }
     }
+}
+.case-detail-content{
+    width: 100%;
+    background-color: #fafafa;
+    @caseDetailTab__Color:#00a0e9;
+    @caseDetail__TR:3rem;
+    padding: 1.2rem 0 3.34rem;
     .caseDetail__content__footer{
-        margin-top:5rem;
+        //margin-top:1.2rem;
         .caseDetail__content__footer__title{
             padding:0 15px 0.5rem;
             h2{
