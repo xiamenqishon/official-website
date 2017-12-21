@@ -1,104 +1,167 @@
-.caseDetail__content{
+.caseDetail__content {
 
-    @caseDetailTab__Color:#00a0e9;
+  @caseDetailTab__Color: #00a0e9;
 
-    @caseDetail__TR:3rem;
+  @caseDetail__TR: 3rem;
 
-    padding:5.5rem 0;
-    .caseDetail__content__p{
-        font-size:1.33rem;
-        font-weight:300;
-        letter-spacing: 1px;
-        line-height: 2rem;
-        text-align:justify;
-        padding:0 15px;
-    }
-    .caseDetail__content__imgtab{
-        margin-top: @caseDetail__TR;
-        .caseDetail__content__imgtab--title{
-            margin: 5rem 0;
-            padding:0 4rem;
-            border-left:0.3rem solid @caseDetailTab__Color;
-            p{
-                vertical-align: middle;
-                line-height: 3rem;
-                font-size: 1.33rem;
-                font-weight:300;
-                text-align:justify;
-                color: #2ebdff;
-            }
-        }
-        .caseDetail__content__imgtab--img{
-            padding:0;
-            img{
-                width:100%;
-            }
-        }
+  padding: 4.6rem 0 5.5rem;
+
+  .row {
+    > div {
+      padding: 0 7.8rem;
     }
 
-    .caseDetail__content__table{
-        margin-top: @caseDetail__TR;
-        border-bottom: 1px solid #ddd;
-        thead{
-            th{
-                padding-left:1.5rem;
-                font-size: 1.6rem;
-                font-weight:400;
-                width: 33.33%;
-                /*&:nth-child(1), &:nth-child(2){
-                    width: 25%;
-                }
-                &:nth-child(3){
-                    width: 50%;
-                }*/
-            }
-        }
-        tbody{
-            tr{
-                height:10rem;
-                td{
-                    padding:1rem 1.5rem;
-                    font-size:1.33rem;
-                    letter-spacing:1px;
-                    font-weight:300;
-                    text-align:justify;
-                }
-            }
-        }
+    .caseDetail__content__p {
+      font-size: 1.33rem;
+      font-weight: 300;
+      letter-spacing: 1px;
+      line-height: 2.2rem;
+      text-align: justify;
     }
-    .caseDetail__content__cdbottom{
-        margin-top:@caseDetail__TR;
-        img{
-            width:100%;
+    .caseDetail__content__imgtab {
+      margin-top: 3.6rem;
+      padding: 0;
+      .caseDetail__content__imgtab--title {
+        margin: 5rem 0;
+        padding: 0 4rem;
+        border-left: 0.3rem solid @caseDetailTab__Color;
+        p {
+          vertical-align: middle;
+          line-height: 3rem;
+          font-size: 1.33rem;
+          font-weight: 300;
+          text-align: justify;
+          color: #2ebdff;
         }
+      }
+      .caseDetail__content__imgtab--img {
+        padding: 0;
+        img {
+          width: 100%;
+        }
+      }
     }
+
+    .caseDetail__content__table {
+      margin-top: 4.6rem;
+      border-bottom: 1px solid #ddd;
+      padding: 0;
+      .table {
+        margin-bottom: 0;
+        thead {
+          th {
+            padding: 0 0 1.5rem 1.5rem;
+            font-size: 1.6rem;
+            font-weight: 400;
+            width: 33.33%;
+            /*&:nth-child(1), &:nth-child(2){
+                width: 25%;
+            }
+            &:nth-child(3){
+                width: 50%;
+            }*/
+          }
+        }
+        tbody {
+          tr {
+            height: 10rem;
+            td {
+              padding: 1rem 1.5rem;
+              font-size: 1.33rem;
+              letter-spacing: 1px;
+              font-weight: 300;
+              text-align: justify;
+            }
+          }
+        }
+      }
+
+    }
+    .caseDetail__content__cdbottom {
+      margin-top: 5rem;
+      padding: 0;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
 }
-.case-detail-content{
-    width: 100%;
-    background-color: #fafafa;
-    @caseDetailTab__Color:#00a0e9;
-    @caseDetail__TR:3rem;
-    padding: 1.2rem 0 3.34rem;
-    .caseDetail__content__footer{
-        //margin-top:1.2rem;
-        .caseDetail__content__footer__title{
-            padding:0 15px 0.5rem;
-            h2{
-                font-size: 2rem;
-                font-weight:400;
-            }
-            a{
-                float:right;
-                margin-top:-2.5rem;
-            }
-        }
-        .caseDetail__content__footer__li{
-            margin-top:1rem;
-            text-align: center;
-            .qs-card{
-                display:inline-block;
-                text-align: left;
-            }
-        }
+
+.case-detail-content {
+  width: 100%;
+  background-color: #fafafa;
+  @caseDetailTab__Color: #00a0e9;
+  @caseDetail__TR: 3rem;
+  padding: 1.2rem 0 3.34rem;
+  .caseDetail__content__footer {
+    //margin-top:1.2rem;
+    .caseDetail__content__footer__title {
+      padding: 0 15px 0.5rem;
+      h2 {
+        font-size: 2rem;
+        font-weight: 400;
+      }
+      a {
+        float: right;
+        margin-top: -2.5rem;
+      }
     }
+    .caseDetail__content__footer__li {
+      margin-top: 1rem;
+      text-align: center;
+      .qs-card {
+        display: inline-block;
+        text-align: left;
+      }
+    }
+  }
+}
+
+/*媒体查询*/
+/*当页面大于1200px时，大屏幕，主要是pc端*/
+@media (min-width: 1200px) {
+
+}
+
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的pc*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/*在480和767像素之间的屏幕里，超小屏幕，主要用于手机*/
+@media (min-width: 480px) and (max-width: 767px) {
+  .caseDetail__content {
+    .row {
+      margin: 0;
+      > div {
+        padding-right: 2.4rem;
+        padding-left: 2.4rem;
+      }
+      .caseDetail__content__imgtab{
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+/*在小于480像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width: 479px) {
+  .caseDetail__content {
+    .row {
+      margin: 0;
+      > div {
+        padding-right: 2.4rem;
+        padding-left: 2.4rem;
+      }
+      .caseDetail__content__imgtab{
+        margin-top: 0;
+      }
+    }
+  }
 }
