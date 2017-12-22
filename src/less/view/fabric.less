@@ -7,9 +7,6 @@
 
   /* 图片轮播 */
   .swiper-container{
-    .fabric-one{
-      background: url('../images/fabric/fabric-banner.png') no-repeat;
-    }
     .fabric-two{
       background: url('../images/customization/banner.png') no-repeat;
     }
@@ -208,6 +205,11 @@
 /*媒体查询*/
 /*当页面大于1200px时，大屏幕，主要是pc端*/
 @media (min-width: 1200px) {
+  .swiper-container{
+    .fabric-one{
+      background: url('../images/fabric/fabric-banner.jpg') no-repeat;
+    }
+  }
   .regist-login a {
     padding: 0.8rem 1.5rem;
   }
@@ -257,6 +259,11 @@
 }
 /*在小于480像素的屏幕，微小屏幕，更低分辨率的手机*/
 @media (max-width: 479px) {
+  .swiper-container {
+    .fabric-one {
+      background: url('../images/fabric/mobile-fabric-banner.jpg') no-repeat;
+    }
+  }
   .regist-login a {
     padding: 0.3rem 0.5rem;
     font-size: 0.8rem;

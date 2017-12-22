@@ -29,6 +29,53 @@ a, a:hover, a:link, a:visited, a:active{
 
 /* 详情页 */
 .qs-consulting-detail-wrapper{
+  @font14:1.1666rem;
+  @font16:1.3333rem;
+  @font18:1.5rem;
+  @font24:2rem;
+
+  @qs-consulting-h5-color:#7E7E7E;
+  .row{
+    padding: 0 12.5rem;
+    h3{
+      font-size: @font24;
+      margin: 5rem 0 2.5rem 0;
+    }
+    h4{
+      font-size: @font18;
+      margin: 3.2rem 0 ;
+    }
+    h5{
+      font-size: @font16;
+      color: @qs-consulting-h5-color;
+      margin-bottom: 3rem;
+    }
+    .thumbnail{
+      cursor: inherit;
+      h6{
+        text-align: center;
+        margin: 1rem 0 0 0;
+        font-size: @font16;
+        color: black;
+      }
+    }
+    a{
+      margin: 3.2rem;
+    }
+    .qs-wrapper-text{
+      text-indent: 2em;
+      font-size: @font14;
+      color: @qs-consulting-h5-color;
+      padding: 0 3rem;
+    }
+    .qs-consulting-detail{
+      font-size: @font16;
+      text-align: center;
+      color: #0daeff;
+      margin: 4rem 0 5rem 0;
+      cursor: pointer;
+    }
+  }
 
 }
 
@@ -75,6 +122,43 @@ a, a:hover, a:link, a:visited, a:active{
           border-radius: 3px;
 
         }
+      }
+    }
+  }
+}
+.consulting-swiper{
+  .slide-one{
+    background-image: url('../images/consulting/banner2.png');
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .qs-consulting-detail-wrapper{
+    .row{
+      padding: 0 1.2rem;
+    }
+    a{
+      margin: 3.2rem 0;
+    }
+    .qs-wrapper-text{
+      padding: 0;
+    }
+  }
+}
+@media (max-width: 479px) {
+  .consulting-swiper {
+    .slide-one {
+      background-image: url('../images/mobile-info.jpg');
+      background-size: 100%;
+    }
+  }
+  .qs-consulting-detail-wrapper{
+    .row{
+      padding: 0 1.2rem;
+      a{
+        margin: 3.2rem 0;
+      }
+      .qs-wrapper-text{
+        padding: 0;
       }
     }
   }

@@ -124,3 +124,10 @@ function positioning(x, y) {
 $('.qs-scanner-down').on('click',function () {
     window.location.href = "../images/FSM3D_V1.9.1.exe";
 });
+
+/**
+ * 跳转到活动咨询页面
+ */
+$('.qs-consulting-detail').on('click',function () {
+    window.location.href = "../static/consulting.html";
+});
