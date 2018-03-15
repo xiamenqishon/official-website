@@ -1,32 +1,38 @@
-.product{
+.product {
 
-  @product-p:#191f25;
-  @product-tab1:#fafafa;
+  @product-p: #191f25;
+  @product-tab1: #fafafa;
 
   margin-top: 1rem;
-  .tab-common{
+  .tab-common {
     padding: 3rem 0;
     text-align: center;
-    .container{
+    .container {
       .text {
-        h3{
+        h3 {
           font-weight: 400;
-          margin-bottom: 2.5rem;
+          margin: 2.5rem 0 2.5rem 0;
         }
-        p{
+        h4 {
+          color: #555555;
+          font-weight: bold;
+          font-size: 1.5rem;
+          margin-bottom: -2rem;
+        }
+        p {
           font-weight: 300;
           font-size: 1.5rem;
           color: #999999;
           line-height: 2rem;
           margin-bottom: 1.4rem;
         }
-        .product-detail-btn{
+        .product-detail-btn {
           //display: block;
           border: 1px solid #38ADFF;
           color: #38ADFF;
           border-radius: 0.3rem;
           padding: 0.8rem 1.2rem;
-          &:hover{
+          &:hover {
             background-color: @customization-blue;
             color: white;
           }
@@ -35,124 +41,168 @@
     }
 
   }
-  .tab1{
+  .tab1 {
     background-color: @product-tab1;
   }
 }
 
-
 /*媒体查询*/
 /*当页面大于1200px时，大屏幕，主要是pc端*/
 @media (min-width: 1024px) {
-  .tab1-text{
+  .tab1-text {
     float: left;
   }
-  .tab1-img{
+
+  .tab1-img {
     float: right;
   }
-  .product{
-    .tab-common{
-      .text{
-        h3{
+
+  .product {
+    .tab-common {
+      .text {
+        h3 {
           font-size: 3.33rem;
         }
       }
       height: 50rem;
-      .text-cls{
+      .text-cls {
         margin: 11.8rem 0 0 4rem;
       }
-      .text-left{
+      .text-left {
         margin: 11.8rem 0 0 7rem;
       }
-      .text-right{
+      .text-right {
         margin: 11.8rem 0 0 12rem;
       }
-      .text-platform{
+      .text-platform {
         margin: 11.8rem 0 0 0;
       }
-      .img-platform{
+      .img-platform {
         margin-top: 4rem !important;
       }
-      .img-cls{
-        img{
+      .img-cls {
+        img {
           margin: 3.4rem 0 0 8.5rem;
         }
-        .custom-back{
+        .custom-back {
           width: 27.92rem;
           height: 41.33rem;
           margin: 3.4rem 0 0 8.5rem;
           background: url("../images/product/product-new-6.png") no-repeat;
-          video{
+          video {
             width: 25rem;
             height: 33.34rem;
             margin: 3.9rem .1rem 0 0;
           }
         }
-        .custom-back2{
+        .custom-back2 {
           width: 27.92rem;
           height: 41.33rem;
           margin: 3.4rem 0 0 8.5rem;
           background: url("../images/product/product-new-7.png") no-repeat;
-          video{
+          video {
             width: 25rem;
             height: 33.34rem;
             margin: 3.9rem .1rem 0 0;
           }
         }
+        .custom-back-two-video {
+          height: 34.4rem;
+          width: 23.5rem;
+          margin: 3.4rem 0 0 0;
+          background: url("../images/product/product-new-6-gray.png") no-repeat;
+          background-size: 100%;
+          video {
+            width: 22rem;
+            height: 28rem;
+            margin-top: 3rem;
+          }
+          &.shopping {
+            background: url("../images/product/shopping.jpg") no-repeat !important;
+            video {
+              width: 14.8rem;
+              height: 9rem;
+              margin-top: 15rem;
+            }
+          }
+        }
+        .pc {
+          height: 30rem;
+          width: 37rem;
+          background: url("../images/product/product-new-10-440x360.png") no-repeat;
+          video {
+            height: 30rem;
+            width: 34rem;
+            margin-top: -4.3rem;
+          }
+        }
+        &.iphoneParent {
+          left: 6rem;
+          bottom: -6.6rem;
+          .phone {
+            height: 24rem;
+            background: url("../images/product/phone.png") no-repeat;
+            video {
+              height: 18.5rem;
+              margin-top: 2.5rem;
+              margin-left: -2.6rem;
+            }
+          }
+        }
       }
-      .img-left{
-        img{
+      .img-left {
+        img {
           margin: 8rem 0 0 4rem;
         }
-        .back-img{
+        .back-img {
           width: 41.33rem;
           height: 27.92rem;
           margin: 8rem 0 0 4rem;
           background: url("../images/product/product-new-2.png") no-repeat;
-          video{
+          video {
             margin-top: 1.38rem;
           }
         }
-        .retail-img2{
+        .retail-img2 {
           width: 50.8rem;
           height: 41.7rem;
-          background: url("../images/product/product-new-11.png") no-repeat;
-          img{
+          background: url("../images/product/product-new-11-gray.jpg") no-repeat;
+          img {
             width: 48rem;
             margin: 1.9rem .3rem 0 0;
             //height:;
           }
         }
       }
-      .img-news-4{
-        img{
+      .img-news-4 {
+        img {
           margin: 3.4rem 0 0 4rem;
         }
       }
-      .img-right{
-        img{
+      .img-right {
+        img {
           margin: 8rem 0 0 8.5rem;
         }
-        .exceeding{
+        .exceeding {
           margin-left: 0;
         }
-        .search-material{
-          margin: 8rem 0 0 8.5rem;
-          width: 41.75rem;
-          height: 28.5rem;
-          background: url("../images/product/product-new-3.png") no-repeat;
-          video{
-            width: 33.34rem;
-            height: 25rem;
-            margin: 1.6rem .8rem 0 0;
+        .search-material {
+          margin: 3rem 0 0 8.5rem;
+          width: 53.75rem;
+          height: 37.5rem;
+          background: url("../images/product/product-new-14.png") no-repeat;
+          video {
+            width: 34.34rem;
+            height: 21rem;
+            margin: 15.3rem .8rem 0 18.5rem;
           }
         }
-        .retail-img{
+        .retail-img {
           width: 50.8rem;
           height: 41.7rem;
           //margin: 0 0 0 8.5rem;
           background: url("../images/product/product-new-10.png") no-repeat;
-          video{
+          video {
             width: 47.5rem;
             margin: 1.5rem 0 0 0;
             //height:;
@@ -161,116 +211,176 @@
       }
     }
   }
-  .text-left-center{
+
+  .text-left-center {
     text-align: left;
   }
 }
+
 /*在992和1024像素之间的屏幕里，中等屏幕，分辨率低的pc*/
 @media (min-width: 768px) and (max-width: 1023px) {
-  .tab1-text{
+  .tab1-text {
     float: left;
   }
-  .tab1-img{
+
+  .tab1-img {
     float: right;
   }
-  .product{
-    .tab-common{
-      .text{
-        h3{
+
+  .product {
+    .tab-common {
+      .text {
+        h3 {
           font-size: 3rem;
         }
       }
       height: 35rem;
-      .text-cls{
+      .text-cls {
         margin: 6rem 0 0 0;
       }
-      .text-left{
+      .text-left {
         margin: 6rem 0 0 0rem;
       }
-      .img-cls{
-        img{
+      .img-cls {
+        img {
           //margin: 3.4rem 0 0 8.5rem;
         }
-        .custom-back{
+        .custom-back {
           width: 21rem;
           height: 31.33rem;
           //margin: 0 0 0 4rem;
           background: url("../images/product/product-new-6.png") no-repeat;
           background-size: 100%;
-          video{
+          video {
             width: 19rem;
             height: 26rem;
             margin: 2rem .1rem 0 0;
           }
         }
-        .custom-back2{
+        .custom-back2 {
           width: 21rem;
           height: 31.33rem;
           margin: 0 0 0 6rem;
           background: url("../images/product/product-new-7.png") no-repeat;
           background-size: 100%;
-          video{
+          video {
             width: 19rem;
             height: 26rem;
             margin: 2rem .1rem 0 0;
           }
         }
+        .custom-back-two-video {
+          height: 19.2rem;
+          margin: 3.4rem 0 0 0;
+          background: url("../images/product/product-new-6-gray.png") no-repeat;
+          background-size: 100%;
+          video {
+            width: 12rem;
+            height: 17rem;
+            margin-top: 1rem;
+            margin-left: 0;
+          }
+          &.shopping {
+            position: relative;
+            height: 19.2rem;
+            margin: 3.4rem 0 0 0;
+            background: url("../images/product/shopping.jpg") no-repeat;
+            background-size: 100%;
+            video {
+              position: absolute;
+              width: 8.25rem;
+              height: 6rem;
+              left: 19%;
+              top: 36%;
+            }
+          }
+        }
+        .pc {
+          position: relative;
+          height: 20rem;
+          margin: 7rem 0 0 0;
+          background: url("../images/product/product-new-10-440x360.png") no-repeat;
+          background-size: 100%;
+          video {
+            position: absolute;
+            width: 94%;
+            left: 3%;
+            top: 4%;
+          }
+        }
+        &.iphoneParent {
+          bottom: -6.6rem;
+          .phone {
+            position: relative;
+            height: 17.5rem;
+            background: url("../images/product/phone.png") no-repeat;
+            background-size: 75%;
+            top: 3.5rem;
+            video {
+              position: absolute;
+              width: 68%;
+              left: 3%;
+              top: 11%;
+            }
+          }
+        }
       }
-      .img-left{
-        img{
+      .img-left {
+        img {
           width: 22.5rem;
           //margin: 8rem 0 0 4rem;
         }
-        .back-img{
+        .back-img {
           width: 100%;
           height: 27.92rem;
           margin: 4rem 0 0 0rem;
           background: url("../images/product/product-new-2.png") no-repeat;
           background-size: 100%;
-          video{
+          video {
             width: 23rem;
             margin-top: 1rem;
           }
         }
-        .retail-img2{
+        .retail-img2 {
           width: 29.8rem;
           height: 29.7rem;
-          background: url("../images/product/product-new-11.png") no-repeat;
+          background: url("../images/product/product-new-11-gray.jpg") no-repeat;
           background-size: 100%;
-          img{
+          img {
             width: 27.5rem;
             margin: 1.1rem .1rem 0 0;
             //height:;
           }
         }
       }
-      .img-news-4{
-        img{
+      .img-news-4 {
+        img {
           //margin: 3.4rem 0 0 4rem;
         }
       }
-      .img-right{
-        img{
+      .img-right {
+        img {
           //margin: 8rem 0 0 8.5rem;
         }
-        .search-material{
+        .search-material {
           width: 100%;
           height: 27.92rem;
           margin-top: 5rem;
-          background: url("../images/product/product-new-3.png") no-repeat;
+          background: url("../images/product/product-new-14.png") no-repeat;
           background-size: 100%;
-          video{
-            width: 23.5rem;
-            margin-top: 1.1rem;
+          video {
+            width: 15rem;
+            margin-top: 8.3rem;
+            margin-left: 10rem;
           }
         }
-        .retail-img{
+        .retail-img {
           width: 30rem;
           height: 30.7rem;
           margin: 4rem 0 0 0;
           background: url("../images/product/product-new-10.png") no-repeat;
           background-size: 100%;
-          video{
+          video {
             width: 28.5rem;
             margin: 1rem 0 0 0;
             //height:;
@@ -279,108 +389,173 @@
       }
     }
   }
-  .text-left-center{
+
+  .text-left-center {
     text-align: left;
   }
 }
+
 /*在小于480像素的屏幕，微小屏幕，更低分辨率的手机*/
 @media (max-width: 767px) {
-  .navbar-right{
+  .navbar-right {
     margin-right: 0 !important;
   }
-  .product{
-    .tab-common{
+
+  .product {
+    .container {
+      p {
+        margin-bottom: .8rem !important;
+      }
+    }
+    .tab-common {
       height: 45rem;
-      .text-cls{
+      .text-cls {
         //margin: 11.8rem 0 0 4rem;
       }
-      .text-left{
+      .text-left {
         //margin: 11.8rem 0 0 7rem;
       }
-      .img-cls{
-        img{
+      .img-cls {
+        img {
           margin: 2rem 0 0 6rem;
         }
-        .custom-back{
+        .custom-back {
           width: 14rem;
           height: 21.33rem;
           margin: 0 auto;
           background: url("../images/product/product-new-6.png") no-repeat;
           background-size: 100%;
-          video{
+          video {
             width: 12.5rem;
             height: 19rem;
           }
         }
-        .custom-back2{
+        .custom-back2 {
           width: 14rem;
           height: 21.33rem;
           margin: 0 auto;
           background: url("../images/product/product-new-7.png") no-repeat;
           background-size: 100%;
-          video{
+          video {
             width: 12.5rem;
             height: 19rem;
           }
         }
+        .custom-back-two-video {
+          position: relative;
+          height: 19.2rem;
+          margin: 1rem 0 1rem 0;
+          background: url("../images/product/product-new-6-gray.png") no-repeat;
+          background-size: 100%;
+          video {
+            position: absolute;
+            width: 90%;
+            left: 5%;
+            top: 9%;
+          }
+          &.shopping {
+            position: relative;
+            height: 19.2rem;
+            margin: 1rem 0 0 0;
+            background: url("../images/product/shopping.jpg") no-repeat;
+            background-size: 100%;
+            video {
+              position: absolute;
+              width: 8.25rem;
+              height: 5.5rem;
+              left: 19%;
+              top: 43%;
+            }
+          }
+        }
+        .pc {
+          position: relative;
+          height: 15.9rem;
+          margin: 2rem 0 0 0;
+          background: url("../images/product/product-new-10-440x360.png") no-repeat;
+          background-size: 100%;
+          video {
+            position: absolute;
+            width: 94%;
+            left: 3%;
+            top: 3%;
+          }
+        }
+        &.iphoneParent {
+          bottom: -6.6rem;
+          .phone {
+            position: relative;
+            height: 14rem;
+            background: url("../images/product/phone.png") no-repeat;
+            background-size: 75%;
+            margin-top: -2.5rem;
+            video {
+              position: absolute;
+              width: 68%;
+              left: 2.5%;
+              top: 8%;
+            }
+          }
+        }
       }
-      .img-left{
-        img{
+      .img-left {
+        img {
           //margin: 8rem 0 0 4rem;
         }
-        .back-img{
+        .back-img {
           width: 24rem;
-          height: 24rem;
-          margin:0 auto;
+          height: 18rem;
+          margin: 0 auto;
           background: url("../images/product/product-new-2.png") no-repeat;
           background-size: 100%;
-          video{
+          video {
             width: 19.5rem;
             margin-top: .7rem;
           }
         }
-        .retail-img2{
+        .retail-img2 {
           width: 25rem;
           height: 21rem;
           margin: 0 auto;
-          background: url("../images/product/product-new-11.png") no-repeat;
+          background: url("../images/product/product-new-11-gray.jpg") no-repeat;
           background-size: 100%;
-          img{
+          img {
             width: 23.5rem;
             margin: .7rem 0 0 0;
             //height:;
           }
         }
       }
-      .img-news-4{
-        img{
+      .img-news-4 {
+        img {
           //margin: 3.4rem 0 0 4rem;
         }
       }
-      .img-right{
-        img{
+      .img-right {
+        img {
           width: 28rem;
           //margin: 8rem 0 0 8.5rem;
         }
-        .search-material{
+        .search-material {
           width: 24rem;
           height: 24rem;
-          margin:0 auto;
-          background: url("../images/product/product-new-3.png") no-repeat;
+          margin: 0 auto;
+          background: url("../images/product/product-new-14.png") no-repeat;
           background-size: 100%;
-          video{
-            width: 19.5rem;
-            margin-top: .7rem;
+          video {
+            width: 12.8rem;
+            margin-top: 6.7rem;
+            margin-left: 8rem;
           }
         }
-        .retail-img{
+        .retail-img {
           width: 25rem;
           height: 21rem;
           margin: 0 auto;
           //margin: 4rem 0 0 0;
           background: url("../images/product/product-new-10.png") no-repeat;
           background-size: 100%;
-          video{
+          video {
             width: 23.5rem;
             margin: .7rem 0 0 0;
             //height:;
@@ -389,7 +564,8 @@
       }
     }
   }
-  .text-left-center{
+
+  .text-left-center {
     text-align: center;
   }
 }
