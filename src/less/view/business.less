@@ -1,0 +1,363 @@
+/*
+* create by junyong.hong
+* email 125173449@qq.com
+* time 2018/5/2
+* description 招商合作
+*/
+/*　轮播图 */
+.business-swiper{
+  .slide-one{
+    background: url("../images/business/banner.jpg") no-repeat center 0;
+    height: 100%;
+    .businessBanner h2{
+      font-weight: 400 !important;
+      text-align: center;
+    }
+    .business-button{
+      margin-top: 100/14rem;
+      border: 1px solid #00a0e9 !important;
+      color: #00a0e9 !important;
+      //margin-bottom: 8rem;
+    }
+  }
+}
+/*　通用按钮　*/
+.businessApplay{
+  text-align: center;
+  margin-top: 100/14rem;
+  a{
+    padding: 1rem 34/14rem;
+    border: 1px solid #00a0e9;
+    border-radius: 5px;
+    color: #00a0e9;
+    cursor: pointer;
+  }
+}
+
+
+.business {
+  @font16: 1.14rem;
+  @font18: 1.29rem;
+  @font20: 1.43rem;
+  @font24: 1.71rem;
+  @font40: 3.33rem;
+  @blurColor: #00a0e9;
+  @glayColor:#fafafa;
+  @blackColor:#333333;
+  @borderColor:#ebeef3;
+  @arrowsColor:#dddddd;
+
+  .title{
+    color: @blackColor;
+    font-size: @font40;
+    //padding: 0 0 2.86rem 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  /*　我们的优势　*/
+  .advantage {
+    background-color: @glayColor;
+    text-align: center;
+    padding: 4.29rem 0 5.71rem 0;
+    .advantageItem {
+      padding: 0;
+      margin-top: 2.86rem;
+      > div {
+        margin: 0 20/14rem 0 0 ;
+        > a {
+          img {
+            border: 1px solid @glayColor;
+            background-size: 100% 100%;
+          }
+          .advantageItemTitle {
+            color: @blurColor;
+            font-size: @font20;
+            font-weight: bold;
+            margin: 40/14rem 0 30/14rem 0;
+          }
+          .advantageItemDesc{
+            color: @blackColor;
+            font-size: @font16;
+          }
+        }
+      }
+    }
+  }
+
+  /*　资源供给　*/
+  .resource{
+    padding: 4.29rem 0 5.71rem 0;
+    .resourceItem {
+      text-align: center;
+      //height: 385/14rem;
+      padding: 0;
+      margin-top: 2.86rem;
+      > div {
+        margin: 0 20/14rem 0 0 ;
+        border: 1px solid @borderColor;
+        height: 100%;
+        > a {
+
+          .resourceItemImg{
+            position: relative;
+            img{
+              width: 100%;
+            }
+            .resourceItemImgTitle{
+              position: absolute;
+              top:0;
+              width: 100%;
+              padding: 1.42rem 0;
+              background-color: rgba(255,255,255,0.85);
+              filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#85ffffff,endColorstr=#85ffffff);
+              text-align: center;
+              color: @blurColor;
+              font-size: @font18;
+              font-weight: bold;
+            }
+          }
+          .resourceItemDesc{
+            padding: 25/14rem 0 35/14rem 0;
+            > p{
+              color: @blackColor;
+              font-size: @font16;
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*　合作条件　*/
+  .conditions{
+    background-color: @glayColor;
+    text-align: center;
+    padding: 4.29rem 0 5.71rem 0;
+    .conditionsItem{
+      text-align: center;
+      padding: 0 20/14rem 0 0;
+      margin-top: 2.86rem;
+      > div{
+        padding: 60/14rem 0 40/14rem 0;
+        background-color: white;
+        border-top: 2px solid @blurColor;
+        border-right: 1px solid @borderColor;
+        border-bottom: 1px solid @borderColor;
+        border-left:1px solid @borderColor;
+        > a{
+          > img{
+            margin: 0 0 50/14rem 0;
+          }
+          .conditionsItemTitle{
+            font-size: @font24;
+            color: @blackColor;
+            font-weight: bold;
+          }
+          .conditionsItemDesc{
+            font-size: 1.14rem;
+            color: @blackColor;
+          }
+        }
+      }
+    }
+  }
+
+  /*　申请流程　*/
+  .process{
+    padding: 4.29rem 0 5.71rem 0;
+    .processStep{
+      margin: 2.86rem 0 1rem 0;
+      > div{
+        position: relative;
+        width: 19.6%;
+        box-sizing: border-box;
+        display: inline-block;
+        text-align: center;
+        .processStepLeft{
+          display: inline-block;
+          img{
+            height: 80%;
+            width: 80%;
+          }
+          p{
+            font-size: @font24;
+            color: @blackColor;
+            margin-top: 40/14rem;
+            font-weight: bold;
+          }
+        }
+        .processStepRight{
+          position: absolute;
+          display: inline-block;
+          top: 18%;
+          left: 94%;
+          font-size: @font40 !important;
+          color: @arrowsColor;
+        }
+      }
+    }
+  }
+}
+/*媒体查询*/
+/*当页面大于1200px时，大屏幕，主要是pc端*/
+@media (min-width: 1200px) {
+  .resourceItemImgTitle{
+    padding: 20px !important;
+  }
+}
+/*在992和1199像素之间的屏幕里，中等屏幕，分辨率低的pc*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .resourceItemImgTitle{
+    padding: 20px !important;
+  }
+}
+/*在768和991像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width: 768px) and (max-width: 991px){
+  /*　轮播　*/
+  .business-swiper{
+    .businessBanner{
+      padding-top: 2rem !important;
+      font-size: 2rem !important;
+    }
+  }
+  /*　通用按钮　*/
+  .businessApplay{
+    margin-top: 2.5rem;
+    a{
+      padding: 0.5rem 1.2rem;
+    }
+  }
+  .business{
+    /*　我们的优势　*/
+    .advantage{
+      .advantageItem{
+        > div{
+          margin: 0;
+          .advantageItemDesc{
+            margin: 1rem 2rem;
+          }
+        }
+      }
+    }
+    /*　资源供给　*/
+    .resource{
+      .resourceItem{
+        //height: 100%;
+        > div{
+          margin: 1rem 2rem;
+          .resourceItemImg{
+            .resourceItemImgTitle{
+              padding: 15px;
+            }
+          }
+        }
+      }
+    }
+    /*　合作条件　*/
+    .conditions{
+      .conditionsItem{
+        .conditionsItemDesc{
+          height: 2rem;
+        }
+      }
+    }
+    /* 申请流程 */
+    .process{
+      .processStep{
+        > div{
+          width: 18.8%;
+          .processStepLeft{
+            p{
+              font-size: 1.2rem;
+              margin-top: 1.4rem;
+            }
+          }
+          .processStepRight{
+            font-size: 2.2rem;
+            top: 22%;
+          }
+        }
+      }
+    }
+  }
+}
+/*在480和767像素之间的屏幕里，超小屏幕，主要用于手机*/
+@media (min-width: 480px) and (max-width: 767px) {
+
+}
+/*在小于480像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width: 479px) {
+  /*　轮播　*/
+  .business-swiper{
+    .businessBanner{
+      margin-top: 0 !important;
+      padding-top: 2rem !important;
+      font-size: 2rem !important;
+      .qs-swiper__title__btnpanel{
+        a{
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  /*　通用按钮　*/
+  .businessApplay{
+    margin-top: 2.5rem;
+    a{
+      padding: 0.5rem 1.2rem;
+    }
+  }
+  .business{
+    /*　我们的优势　*/
+    .advantage{
+      .advantageItem{
+        > div{
+          margin: 0;
+          .advantageItemDesc{
+            margin: 1rem 2rem;
+          }
+        }
+      }
+    }
+    /*　资源供给　*/
+    .resource{
+      .resourceItem{
+        height: 100%;
+        > div{
+          margin: 1rem 2rem;
+          .resourceItemImg{
+            .resourceItemImgTitle{
+              padding: 15px;
+            }
+          }
+        }
+      }
+    }
+    /*　合作条件　*/
+    .conditions{
+      .conditionsItem{
+        padding: 1rem 2rem;
+      }
+    }
+    /* 申请流程 */
+    .process{
+      .processStep{
+        > div{
+          width: 18.8%;
+          .processStepLeft{
+            p{
+              font-size: 1.2rem;
+              margin-top: 1.4rem;
+            }
+          }
+          .processStepRight{
+            font-size: 1.5rem !important;
+            top: 15%;
+          }
+        }
+      }
+    }
+  }
+}

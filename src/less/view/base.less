@@ -11,6 +11,87 @@ body{
   border: none;
 }
 
+/* 加盟咨询 */
+.businessJoin{
+  @font18: 1.29rem;
+  @font14: 1rem;
+  @blurColor: #00a0e9;
+  @blackColor:#333333;
+  @whiteColor: #ffffff;
+  @glayColor: #e3e2e2;
+  @glay2Color: #bfbfbf;
+
+  position: fixed;
+  top: 66.66%;
+  right: 7.14rem;
+  z-index: 9999;
+  .businessJoinDesc{
+    float: left;
+    position: relative;
+    display: inline-block;
+    background-color: @whiteColor;
+    box-shadow: 1px 4px 6px @glayColor;
+    padding: 20/14rem;
+    margin: -10.5rem 10rem 0 0 ;
+    span{
+      position: absolute;
+      right: 1.42rem;
+      top: 0;
+      font-size: 2.5rem;
+      color: @glay2Color;
+      cursor: pointer;
+    }
+    img{
+      margin-bottom: 1rem;
+    }
+    p{
+      color: @blackColor;
+    }
+    .tel{
+      font-size: @font18;
+      margin-bottom: .5rem;
+    }
+    .time{
+      font-size: @font14;
+      margin: 0;
+    }
+    .call{
+      font-size: @font14;
+      margin: 25/14rem 0;
+    }
+    .button{
+      margin-top: 3rem;
+      a{
+        border: 1px solid @blurColor;
+        border-radius: 5px;
+        color: @blurColor;
+        padding: 1rem 34/14rem;
+      }
+    }
+  }
+  .businessJoinButton{
+    float: right;
+    display: inline-block;
+    text-align: center;
+    a{
+      position: absolute;
+      top: .5rem;
+      right: 0;
+      font-size: 24/14rem;
+      color: @whiteColor;
+      height: 100%;
+      .title{
+        position: relative;
+        top: -8rem;
+        p{
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 1200px) {
   .container {
     width: 1180px;
@@ -42,6 +123,54 @@ body{
         right: 10px;
         width: 18px;
         height: 34px;}
+    }
+  }
+
+  .businessJoin{
+    .businessJoinDesc{
+      margin-right: 120px !important;
+    }
+    .businessJoinButton{
+      a{
+        img{
+          width: 100px !important;
+          height: 100px !important;
+        }
+        .title{
+          top: -7.2rem !important;
+          p{
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+/*在480和767像素之间的屏幕里，超小屏幕，主要用于手机*/
+@media (min-width: 480px) and (max-width: 767px) {
+
+}
+/*在小于480像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width: 479px) {
+  .businessJoin{
+    right: 1rem;
+    .businessJoinDesc{
+      margin: -10.5rem 4.2rem 0 0 ;
+      padding: 1.42rem;
+      width: 21rem;
+    }
+    .businessJoinButton{
+      a{
+        top: .35rem;
+        font-size: 1rem;
+        img{
+          width: 4rem;
+          height: 4rem;
+        }
+        .title{
+          top: -3.6rem;
+        }
+      }
     }
   }
 }

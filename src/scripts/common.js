@@ -78,7 +78,6 @@ $(function () {
 
 
                 clearClass(tabPanelList);
-                console.log()
                 $('#' + $(this).attr('name')).show();
 
             })
@@ -130,4 +129,24 @@ $('.qs-scanner-down').on('click',function () {
  */
 $('.qs-consulting-detail').on('click',function () {
     window.location.href = "../static/consulting.html";
+});
+
+/**
+ * 加盟咨询 展开详情
+ *
+ * , .businessJoinDesc span
+ */
+$('.businessJoin').mouseout(function () {
+    $('.businessJoinDesc').addClass('hidden');
+});
+$('.businessJoin').mouseover(function () {
+    $('.businessJoinDesc').removeClass('hidden');
+});
+$('.businessJoinButton').on('click', function () {
+    if ($('.businessJoinDesc').hasClass('hidden')) {
+        $('.businessJoinDesc').removeClass('hidden');
+    }
+});
+$('.businessJoinDesc span').on('click', function () {
+    $('.businessJoinDesc').addClass('hidden');
 });
